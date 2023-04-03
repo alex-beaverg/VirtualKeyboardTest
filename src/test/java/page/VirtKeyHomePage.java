@@ -28,4 +28,9 @@ public class VirtKeyHomePage extends page.AbstractPage {
         logger.info("Opened 'Virtual Keyboard' page with URL: [" + HOMEPAGE_URL + "]");
         return this;
     }
+
+    public VirtKeyHomePage showKeyboard() {
+        outputTextField.click();
+        return this;
+    }
 }

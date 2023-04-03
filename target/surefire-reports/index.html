@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,6 +104,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Tests" title="test.VirtKeyTests" class="method navigator-link" hash-for-method="openVirtualKeyboardPage">openVirtualKeyboardPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Tests" title="test.VirtKeyTests" class="method navigator-link" hash-for-method="showVirtualKeyboardOnThePage">showVirtualKeyboardOnThePage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Tests -->
@@ -131,6 +136,15 @@
                   <span class="method-name">openVirtualKeyboardPage</span>
                   <em>
 (Open 'Virtual Keyboard' page test)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="showVirtualKeyboardOnThePage">
+                  </a> <!-- showVirtualKeyboardOnThePage -->
+                  <span class="method-name">showVirtualKeyboardOnThePage</span>
+                  <em>
+(Show 'Virtual Keyboard' on the page)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -187,16 +201,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'openVirtualKeyboardPage')
+data.setCell(0, 1, 'showVirtualKeyboardOnThePage')
 data.setCell(0, 2, 'test.VirtKeyTests')
-data.setCell(0, 3, 586);
+data.setCell(0, 3, 566);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'openVirtualKeyboardPage')
+data.setCell(1, 2, 'test.VirtKeyTests')
+data.setCell(1, 3, 545);
 window.suiteTableData['Tests']= { tableData: data, tableDiv: 'times-div-Tests'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 586 ms</span>
+              <span class="suite-total-time">Total running time: 1 seconds</span>
               <div id="times-div-Tests">
               </div> <!-- times-div-Tests -->
             </div> <!-- times-div -->
@@ -229,11 +247,23 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">openVirtualKeyboardPage</span>
-                <span class="method-start">1380 ms</span>
+                <span class="method-start">1374 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">browserExit</span>
-                <span class="method-start">1967 ms</span>
+                <span class="method-start">1921 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">browseSetUp</span>
+                <span class="method-start">2036 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">showVirtualKeyboardOnThePage</span>
+                <span class="method-start">2778 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserExit</span>
+                <span class="method-start">3344 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
