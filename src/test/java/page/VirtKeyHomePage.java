@@ -74,54 +74,14 @@ public class VirtKeyHomePage extends page.AbstractPage {
     }
 
     private HashMap<Character, Character> crateEnMap() {
-        HashMap<Character, Character> symbols = new HashMap<>();
-        symbols.put('~', '`');
-        symbols.put('!', '1');
-        symbols.put('@', '2');
-        symbols.put('#', '3');
-        symbols.put('$', '4');
-        symbols.put('%', '5');
-        symbols.put('^', '6');
-        symbols.put('&', '7');
-        symbols.put('*', '8');
-        symbols.put('(', '9');
-        symbols.put(')', '0');
-        symbols.put('_', '-');
-        symbols.put('+', '=');
-        symbols.put('{', '[');
-        symbols.put('}', ']');
-        symbols.put(':', ';');
-        symbols.put('"', '\'');
-        symbols.put('|', '\\');
-        symbols.put('<', ',');
-        symbols.put('>', '.');
-        symbols.put('?', '/');
-        symbols.put('Q', 'q');
-        symbols.put('W', 'w');
-        symbols.put('E', 'e');
-        symbols.put('R', 'r');
-        symbols.put('T', 't');
-        symbols.put('Y', 'y');
-        symbols.put('U', 'u');
-        symbols.put('I', 'i');
-        symbols.put('O', 'o');
-        symbols.put('P', 'p');
-        symbols.put('A', 'a');
-        symbols.put('S', 's');
-        symbols.put('D', 'd');
-        symbols.put('F', 'f');
-        symbols.put('G', 'g');
-        symbols.put('H', 'h');
-        symbols.put('J', 'j');
-        symbols.put('K', 'k');
-        symbols.put('L', 'l');
-        symbols.put('Z', 'z');
-        symbols.put('X', 'x');
-        symbols.put('C', 'c');
-        symbols.put('V', 'v');
-        symbols.put('B', 'b');
-        symbols.put('N', 'n');
-        symbols.put('M', 'm');
-        return symbols;
+        return new HashMap<>() {{
+            put('~', '`'); put('!', '1'); put('@', '2'); put('#', '3'); put('$', '4'); put('%', '5'); put('^', '6');
+            put('&', '7'); put('*', '8'); put('(', '9'); put(')', '0'); put('_', '-'); put('+', '='); put('{', '[');
+            put('}', ']'); put(':', ';'); put('<', ','); put('>', '.'); put('?', '/'); put('Q', 'q'); put('W', 'w');
+            put('E', 'e'); put('R', 'r'); put('T', 't'); put('Y', 'y'); put('U', 'u'); put('I', 'i'); put('O', 'o');
+            put('P', 'p'); put('A', 'a'); put('S', 's'); put('D', 'd'); put('F', 'f'); put('G', 'g'); put('H', 'h');
+            put('J', 'j'); put('K', 'k'); put('L', 'l'); put('Z', 'z'); put('X', 'x'); put('C', 'c'); put('V', 'v');
+            put('B', 'b'); put('N', 'n'); put('M', 'm'); put('"', '\''); put('|', '\\');
+        }};
     }
 }
