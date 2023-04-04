@@ -27,13 +27,24 @@ public class VirtKeyTests extends test.CommonConditions {
     }
 
     @Test (description = "Write text with the virtual keyboard")
-    public void writeTextWithTheVirtualKeyboard() {
+    public void writeTextWithTheVirtualKeyboardWithoutShift() {
 
         String text = new VirtKeyHomePage(driver)
                 .openPage()
                 .showKeyboard()
-                .writeText("hello ;-=`123\\/.[]");
+                .writeText("hello ;-=`'123\\/.[]");
 
-        Assert.assertEquals(text, "hello ;-=`123\\/.[]");
+        Assert.assertEquals(text, "hello ;-=`'123\\/.[]");
+    }
+
+    @Test (description = "Write text with the virtual keyboard")
+    public void writeTextWithTheVirtualKeyboardWithShift() {
+
+        String text = new VirtKeyHomePage(driver)
+                .openPage()
+                .showKeyboard()
+                .writeText("HELLO my Friend");
+
+        Assert.assertEquals(text, "HELLO my Friend");
     }
 }

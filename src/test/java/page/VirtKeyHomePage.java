@@ -3,6 +3,7 @@ package page;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -42,9 +43,23 @@ public class VirtKeyHomePage extends page.AbstractPage {
     public String writeText(String str) {
         StringBuilder text = new StringBuilder();
         String keyLetter = "";
+        String withShift = "~!@#$%^&*()_+QWERTYUIOP{}ASDFGHJKL:\"|ZXCVBNM<>?";
+        boolean isShift = false;
         for (char letter : str.toCharArray()) {
+            if (isShift) {
+                JavascriptExecutor executor = (JavascriptExecutor)driver;
+                executor.executeScript("document.getElementById('keyboard__shift').click();");
+                isShift = false;
+            }
             if (letter == ' ') {
                 keyLetter = "space";
+            } else if (withShift.contains(String.valueOf(letter))) {
+                WebElement shift = driver.findElement(By.id("keyboard__shift"));
+                new ExplicitCondition(driver, shift);
+                JavascriptExecutor executor = (JavascriptExecutor)driver;
+                executor.executeScript("document.getElementById('keyboard__shift').click();");
+                keyLetter = String.valueOf(letter).toLowerCase();
+                isShift = true;
             } else {
                 keyLetter = String.valueOf(letter);
             }
