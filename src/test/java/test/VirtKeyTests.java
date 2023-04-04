@@ -1,3 +1,4 @@
+// mvn -Dbrowser=edge -Dsurefire.suiteXmlFiles=src\test\resources\tests.xml clean test
 package test;
 
 import org.openqa.selenium.By;
