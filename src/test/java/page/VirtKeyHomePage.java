@@ -43,20 +43,22 @@ public class VirtKeyHomePage extends page.AbstractPage {
         StringBuilder text = new StringBuilder();
         String keyLetter;
         boolean isShift = false;
+        HashMap<Character, Character> shiftMap = createEnglishShiftMap();
+
         for (char letter : str.toCharArray()) {
-            if (isShift) {
-                clickShiftWithJSExecutor();
-                isShift = false;
-            }
             if (letter == ' ') {
                 keyLetter = "space";
-            } else if (crateEnMap().containsKey(letter)) {
-                WebElement shift = driver.findElement(By.id("keyboard__shift"));
-                new ExplicitCondition(driver, shift);
-                clickShiftWithJSExecutor();
-                keyLetter = String.valueOf(crateEnMap().get(letter));
-                isShift = true;
+            } else if (shiftMap.containsKey(letter)) {
+                if (!isShift) {
+                    clickShiftWithJSExecutor();
+                    isShift = true;
+                }
+                keyLetter = String.valueOf(shiftMap.get(letter));
             } else {
+                if (isShift) {
+                    clickShiftWithJSExecutor();
+                    isShift = false;
+                }
                 keyLetter = String.valueOf(letter);
             }
             WebElement key = driver.findElement(By.id("keyboard__" + keyLetter));
@@ -64,16 +66,23 @@ public class VirtKeyHomePage extends page.AbstractPage {
             key.click();
             text.append(letter);
         }
+
         logger.info("Was wrote text '" + str + "'");
         return text.toString();
     }
 
     private void clickShiftWithJSExecutor() {
+        logger.info("Was clicked key 'Shift'");
         JavascriptExecutor executor = (JavascriptExecutor) driver;
         executor.executeScript("document.getElementById('keyboard__shift').click();");
     }
 
-    private HashMap<Character, Character> crateEnMap() {
+    private boolean isShift(boolean shift) {
+        return !shift;
+    }
+
+    private HashMap<Character, Character> createEnglishShiftMap() {
+        logger.info("Was created english Shift Map");
         return new HashMap<>() {{
             put('~', '`'); put('!', '1'); put('@', '2'); put('#', '3'); put('$', '4'); put('%', '5'); put('^', '6');
             put('&', '7'); put('*', '8'); put('(', '9'); put(')', '0'); put('_', '-'); put('+', '='); put('{', '[');
