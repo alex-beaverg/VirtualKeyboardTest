@@ -77,10 +77,6 @@ public class VirtKeyHomePage extends page.AbstractPage {
         executor.executeScript("document.getElementById('keyboard__shift').click();");
     }
 
-    private boolean isShift(boolean shift) {
-        return !shift;
-    }
-
     private HashMap<Character, Character> createEnglishShiftMap() {
         logger.info("Was created english Shift Map");
         return new HashMap<>() {{
