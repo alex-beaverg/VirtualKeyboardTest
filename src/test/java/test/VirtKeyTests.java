@@ -25,4 +25,15 @@ public class VirtKeyTests extends test.CommonConditions {
 
         Assert.assertNotNull(driver.findElement(By.className("keyboard")));
     }
+
+    @Test (description = "Write text with the virtual keyboard")
+    public void writeTextWithTheVirtualKeyboard() {
+
+        String text = new VirtKeyHomePage(driver)
+                .openPage()
+                .showKeyboard()
+                .writeText("hello ;-=`123\\/.[]");
+
+        Assert.assertEquals(text, "hello ;-=`123\\/.[]");
+    }
 }
