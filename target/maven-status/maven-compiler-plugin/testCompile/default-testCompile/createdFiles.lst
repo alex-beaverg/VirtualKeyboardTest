@@ -3,6 +3,8 @@ utils\TestListener.class
 waits\ExplicitCondition.class
 test\CommonConditions.class
 driver\DriverSingleton.class
+page\VirtKeyHomePage$2.class
+page\VirtKeyHomePage$3.class
 test\VirtKeyTests.class
 page\AbstractPage.class
 page\VirtKeyHomePage.class
