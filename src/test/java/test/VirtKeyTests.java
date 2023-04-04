@@ -43,8 +43,8 @@ public class VirtKeyTests extends test.CommonConditions {
         String text = new VirtKeyHomePage(driver)
                 .openPage()
                 .showKeyboard()
-                .writeText("HELLO my Friend");
+                .writeText("HeLLo ~!@#$%^&*()_+{}|:\"<>?");
 
-        Assert.assertEquals(text, "HELLO my Friend");
+        Assert.assertEquals(text, "HeLLo ~!@#$%^&*()_+{}|:\"<>?");
     }
 }

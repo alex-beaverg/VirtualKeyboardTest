@@ -1,33 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-04-04T02:26:55 MSK" name="Tests" finished-at="2023-04-04T02:26:59 MSK" duration-ms="3475">
+  <suite started-at="2023-04-04T16:23:31 MSK" name="Tests" finished-at="2023-04-04T16:23:41 MSK" duration-ms="9615">
     <groups>
     </groups>
-    <test started-at="2023-04-04T02:26:55 MSK" name="Tests" finished-at="2023-04-04T02:26:59 MSK" duration-ms="3475">
+    <test started-at="2023-04-04T16:23:31 MSK" name="Tests" finished-at="2023-04-04T16:23:41 MSK" duration-ms="9615">
       <class name="test.VirtKeyTests">
-        <test-method is-config="true" signature="browseSetUp()[pri:0, instance:test.VirtKeyTests@1ea9f6af]" started-at="2023-04-04T02:26:55 MSK" name="browseSetUp" finished-at="2023-04-04T02:26:57 MSK" duration-ms="1374" status="PASS">
+        <test-method is-config="true" signature="browseSetUp()[pri:0, instance:test.VirtKeyTests@5119fb47]" started-at="2023-04-04T16:23:31 MSK" name="browseSetUp" finished-at="2023-04-04T16:23:33 MSK" duration-ms="1353" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browseSetUp -->
-        <test-method signature="openVirtualKeyboardPage()[pri:0, instance:test.VirtKeyTests@1ea9f6af]" started-at="2023-04-04T02:26:57 MSK" name="openVirtualKeyboardPage" description="Open &#039;Virtual Keyboard&#039; page test" finished-at="2023-04-04T02:26:57 MSK" duration-ms="545" status="PASS">
+        <test-method signature="openVirtualKeyboardPage()[pri:0, instance:test.VirtKeyTests@5119fb47]" started-at="2023-04-04T16:23:33 MSK" name="openVirtualKeyboardPage" description="Open &#039;Virtual Keyboard&#039; page test" finished-at="2023-04-04T16:23:33 MSK" duration-ms="534" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openVirtualKeyboardPage -->
-        <test-method is-config="true" signature="browserExit()[pri:0, instance:test.VirtKeyTests@1ea9f6af]" started-at="2023-04-04T02:26:57 MSK" name="browserExit" finished-at="2023-04-04T02:26:57 MSK" duration-ms="114" status="PASS">
+        <test-method is-config="true" signature="browserExit()[pri:0, instance:test.VirtKeyTests@5119fb47]" started-at="2023-04-04T16:23:33 MSK" name="browserExit" finished-at="2023-04-04T16:23:33 MSK" duration-ms="112" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserExit -->
-        <test-method is-config="true" signature="browseSetUp()[pri:0, instance:test.VirtKeyTests@1ea9f6af]" started-at="2023-04-04T02:26:57 MSK" name="browseSetUp" finished-at="2023-04-04T02:26:58 MSK" duration-ms="742" status="PASS">
+        <test-method is-config="true" signature="browseSetUp()[pri:0, instance:test.VirtKeyTests@5119fb47]" started-at="2023-04-04T16:23:33 MSK" name="browseSetUp" finished-at="2023-04-04T16:23:34 MSK" duration-ms="678" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browseSetUp -->
-        <test-method signature="showVirtualKeyboardOnThePage()[pri:0, instance:test.VirtKeyTests@1ea9f6af]" started-at="2023-04-04T02:26:58 MSK" name="showVirtualKeyboardOnThePage" description="Show &#039;Virtual Keyboard&#039; on the page" finished-at="2023-04-04T02:26:59 MSK" duration-ms="566" status="PASS">
+        <test-method signature="showVirtualKeyboardOnThePage()[pri:0, instance:test.VirtKeyTests@5119fb47]" started-at="2023-04-04T16:23:34 MSK" name="showVirtualKeyboardOnThePage" description="Show &#039;Virtual Keyboard&#039; on the page" finished-at="2023-04-04T16:23:35 MSK" duration-ms="536" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- showVirtualKeyboardOnThePage -->
-        <test-method is-config="true" signature="browserExit()[pri:0, instance:test.VirtKeyTests@1ea9f6af]" started-at="2023-04-04T02:26:59 MSK" name="browserExit" finished-at="2023-04-04T02:26:59 MSK" duration-ms="110" status="PASS">
+        <test-method is-config="true" signature="browserExit()[pri:0, instance:test.VirtKeyTests@5119fb47]" started-at="2023-04-04T16:23:35 MSK" name="browserExit" finished-at="2023-04-04T16:23:35 MSK" duration-ms="121" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserExit -->
+        <test-method is-config="true" signature="browseSetUp()[pri:0, instance:test.VirtKeyTests@5119fb47]" started-at="2023-04-04T16:23:35 MSK" name="browseSetUp" finished-at="2023-04-04T16:23:36 MSK" duration-ms="696" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browseSetUp -->
+        <test-method signature="writeTextWithTheVirtualKeyboardWithShift()[pri:0, instance:test.VirtKeyTests@5119fb47]" started-at="2023-04-04T16:23:36 MSK" name="writeTextWithTheVirtualKeyboardWithShift" description="Write text with the virtual keyboard" finished-at="2023-04-04T16:23:38 MSK" duration-ms="2829" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- writeTextWithTheVirtualKeyboardWithShift -->
+        <test-method is-config="true" signature="browserExit()[pri:0, instance:test.VirtKeyTests@5119fb47]" started-at="2023-04-04T16:23:38 MSK" name="browserExit" finished-at="2023-04-04T16:23:38 MSK" duration-ms="116" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserExit -->
+        <test-method is-config="true" signature="browseSetUp()[pri:0, instance:test.VirtKeyTests@5119fb47]" started-at="2023-04-04T16:23:38 MSK" name="browseSetUp" finished-at="2023-04-04T16:23:39 MSK" duration-ms="674" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browseSetUp -->
+        <test-method signature="writeTextWithTheVirtualKeyboardWithoutShift()[pri:0, instance:test.VirtKeyTests@5119fb47]" started-at="2023-04-04T16:23:39 MSK" name="writeTextWithTheVirtualKeyboardWithoutShift" description="Write text with the virtual keyboard" finished-at="2023-04-04T16:23:41 MSK" duration-ms="1818" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- writeTextWithTheVirtualKeyboardWithoutShift -->
+        <test-method is-config="true" signature="browserExit()[pri:0, instance:test.VirtKeyTests@5119fb47]" started-at="2023-04-04T16:23:41 MSK" name="browserExit" finished-at="2023-04-04T16:23:41 MSK" duration-ms="123" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserExit -->
