@@ -22,7 +22,7 @@ public class VirtKeyHomePage extends page.AbstractPage {
         PageFactory.initElements(driver, this);
     }
 
-    @FindBy(tagName = "textarea")
+    @FindBy(className = "use-keyboard-input")
     private WebElement outputTextField;
 
     @Override
@@ -34,6 +34,7 @@ public class VirtKeyHomePage extends page.AbstractPage {
     }
 
     public VirtKeyHomePage showKeyboard() {
+        new ExplicitCondition(driver, outputTextField);
         outputTextField.click();
         logger.info("Was showed keyboard on the screen");
         return this;
