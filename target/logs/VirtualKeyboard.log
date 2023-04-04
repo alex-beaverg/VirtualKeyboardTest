@@ -1,14 +1,14 @@
-2023-04-05 02:12:47,018 DEBUG logging.InternalLoggerFactory [main] io.netty.util.internal.logging.InternalLoggerFactory.useLog4J2LoggerFactory(InternalLoggerFactory.java:76) Using Log4J2 as the default logging framework
-2023-04-05 02:12:47,023 DEBUG util.ResourceLeakDetector [main] io.netty.util.ResourceLeakDetector.<clinit>(ResourceLeakDetector.java:129) -Dio.netty.leakDetection.level: simple
-2023-04-05 02:12:47,023 DEBUG util.ResourceLeakDetector [main] io.netty.util.ResourceLeakDetector.<clinit>(ResourceLeakDetector.java:130) -Dio.netty.leakDetection.targetRecords: 4
-2023-04-05 02:12:47,026 DEBUG util.ResourceLeakDetectorFactory [main] io.netty.util.ResourceLeakDetectorFactory$DefaultResourceLeakDetectorFactory.newResourceLeakDetector(ResourceLeakDetectorFactory.java:196) Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@5fc930f0
-2023-04-05 02:12:47,039 DEBUG internal.PlatformDependent0 [main] io.netty.util.internal.PlatformDependent0.explicitNoUnsafeCause0(PlatformDependent0.java:496) -Dio.netty.noUnsafe: false
-2023-04-05 02:12:47,040 DEBUG internal.PlatformDependent0 [main] io.netty.util.internal.PlatformDependent0.javaVersion0(PlatformDependent0.java:1000) Java version: 17
-2023-04-05 02:12:47,041 DEBUG internal.PlatformDependent0 [main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:137) sun.misc.Unsafe.theUnsafe: available
-2023-04-05 02:12:47,041 DEBUG internal.PlatformDependent0 [main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:161) sun.misc.Unsafe.copyMemory: available
-2023-04-05 02:12:47,042 DEBUG internal.PlatformDependent0 [main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:193) sun.misc.Unsafe.storeFence: available
-2023-04-05 02:12:47,043 DEBUG internal.PlatformDependent0 [main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:236) java.nio.Buffer.address: available
-2023-04-05 02:12:47,043 DEBUG internal.PlatformDependent0 [main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:317) direct buffer constructor: unavailable
+2023-04-05 02:40:00,646 DEBUG logging.InternalLoggerFactory [main] io.netty.util.internal.logging.InternalLoggerFactory.useLog4J2LoggerFactory(InternalLoggerFactory.java:76) Using Log4J2 as the default logging framework
+2023-04-05 02:40:00,646 DEBUG util.ResourceLeakDetector [main] io.netty.util.ResourceLeakDetector.<clinit>(ResourceLeakDetector.java:129) -Dio.netty.leakDetection.level: simple
+2023-04-05 02:40:00,646 DEBUG util.ResourceLeakDetector [main] io.netty.util.ResourceLeakDetector.<clinit>(ResourceLeakDetector.java:130) -Dio.netty.leakDetection.targetRecords: 4
+2023-04-05 02:40:00,646 DEBUG util.ResourceLeakDetectorFactory [main] io.netty.util.ResourceLeakDetectorFactory$DefaultResourceLeakDetectorFactory.newResourceLeakDetector(ResourceLeakDetectorFactory.java:196) Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@6bcbf05b
+2023-04-05 02:40:00,662 DEBUG internal.PlatformDependent0 [main] io.netty.util.internal.PlatformDependent0.explicitNoUnsafeCause0(PlatformDependent0.java:496) -Dio.netty.noUnsafe: false
+2023-04-05 02:40:00,662 DEBUG internal.PlatformDependent0 [main] io.netty.util.internal.PlatformDependent0.javaVersion0(PlatformDependent0.java:1000) Java version: 17
+2023-04-05 02:40:00,662 DEBUG internal.PlatformDependent0 [main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:137) sun.misc.Unsafe.theUnsafe: available
+2023-04-05 02:40:00,662 DEBUG internal.PlatformDependent0 [main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:161) sun.misc.Unsafe.copyMemory: available
+2023-04-05 02:40:00,662 DEBUG internal.PlatformDependent0 [main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:193) sun.misc.Unsafe.storeFence: available
+2023-04-05 02:40:00,662 DEBUG internal.PlatformDependent0 [main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:236) java.nio.Buffer.address: available
+2023-04-05 02:40:00,662 DEBUG internal.PlatformDependent0 [main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:317) direct buffer constructor: unavailable
 java.lang.UnsupportedOperationException: Reflective setAccessible(true) disabled
 	at io.netty.util.internal.ReflectionUtil.trySetAccessible(ReflectionUtil.java:31) ~[netty-common-4.1.90.Final.jar:4.1.90.Final]
 	at io.netty.util.internal.PlatformDependent0$5.run(PlatformDependent0.java:288) ~[netty-common-4.1.90.Final.jar:4.1.90.Final]
@@ -30,13 +30,12 @@ java.lang.UnsupportedOperationException: Reflective setAccessible(true) disabled
 	at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:94) ~[selenium-remote-driver-4.8.3.jar:?]
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.<init>(DriverCommandExecutor.java:88) ~[selenium-remote-driver-4.8.3.jar:?]
 	at org.openqa.selenium.chromium.ChromiumDriverCommandExecutor.<init>(ChromiumDriverCommandExecutor.java:40) ~[selenium-chromium-driver-4.8.3.jar:?]
-	at org.openqa.selenium.edge.EdgeDriver$EdgeDriverCommandExecutor.<init>(EdgeDriver.java:83) ~[selenium-edge-driver-4.8.3.jar:?]
-	at org.openqa.selenium.edge.EdgeDriver.generateExecutor(EdgeDriver.java:73) ~[selenium-edge-driver-4.8.3.jar:?]
-	at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:60) ~[selenium-edge-driver-4.8.3.jar:?]
-	at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:56) ~[selenium-edge-driver-4.8.3.jar:?]
-	at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:48) ~[selenium-edge-driver-4.8.3.jar:?]
-	at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:44) ~[selenium-edge-driver-4.8.3.jar:?]
-	at driver.DriverSingleton.getDriver(DriverSingleton.java:24) ~[test-classes/:?]
+	at org.openqa.selenium.chrome.ChromeDriver$ChromeDriverCommandExecutor.<init>(ChromeDriver.java:111) ~[selenium-chrome-driver-4.8.3.jar:?]
+	at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:101) ~[selenium-chrome-driver-4.8.3.jar:?]
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88) ~[selenium-chrome-driver-4.8.3.jar:?]
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:84) ~[selenium-chrome-driver-4.8.3.jar:?]
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:52) ~[selenium-chrome-driver-4.8.3.jar:?]
+	at driver.DriverSingleton.getDriver(DriverSingleton.java:21) ~[test-classes/:?]
 	at test.CommonConditions.browseSetUp(CommonConditions.java:16) ~[test-classes/:?]
 	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
 	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
@@ -74,8 +73,8 @@ java.lang.UnsupportedOperationException: Reflective setAccessible(true) disabled
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169) ~[surefire-booter-3.0.0-M8.jar:3.0.0-M8]
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595) ~[surefire-booter-3.0.0-M8.jar:3.0.0-M8]
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581) ~[surefire-booter-3.0.0-M8.jar:3.0.0-M8]
-2023-04-05 02:12:47,049 DEBUG internal.PlatformDependent0 [main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:385) java.nio.Bits.unaligned: available, true
-2023-04-05 02:12:47,050 DEBUG internal.PlatformDependent0 [main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:449) jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable
+2023-04-05 02:40:00,662 DEBUG internal.PlatformDependent0 [main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:385) java.nio.Bits.unaligned: available, true
+2023-04-05 02:40:00,662 DEBUG internal.PlatformDependent0 [main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:449) jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable
 java.lang.IllegalAccessException: class io.netty.util.internal.PlatformDependent0$7 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @d4342c2
 	at jdk.internal.reflect.Reflection.newIllegalAccessException(Reflection.java:392) ~[?:?]
 	at java.lang.reflect.AccessibleObject.checkAccess(AccessibleObject.java:674) ~[?:?]
@@ -99,13 +98,12 @@ java.lang.IllegalAccessException: class io.netty.util.internal.PlatformDependent
 	at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:94) ~[selenium-remote-driver-4.8.3.jar:?]
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.<init>(DriverCommandExecutor.java:88) ~[selenium-remote-driver-4.8.3.jar:?]
 	at org.openqa.selenium.chromium.ChromiumDriverCommandExecutor.<init>(ChromiumDriverCommandExecutor.java:40) ~[selenium-chromium-driver-4.8.3.jar:?]
-	at org.openqa.selenium.edge.EdgeDriver$EdgeDriverCommandExecutor.<init>(EdgeDriver.java:83) ~[selenium-edge-driver-4.8.3.jar:?]
-	at org.openqa.selenium.edge.EdgeDriver.generateExecutor(EdgeDriver.java:73) ~[selenium-edge-driver-4.8.3.jar:?]
-	at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:60) ~[selenium-edge-driver-4.8.3.jar:?]
-	at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:56) ~[selenium-edge-driver-4.8.3.jar:?]
-	at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:48) ~[selenium-edge-driver-4.8.3.jar:?]
-	at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:44) ~[selenium-edge-driver-4.8.3.jar:?]
-	at driver.DriverSingleton.getDriver(DriverSingleton.java:24) ~[test-classes/:?]
+	at org.openqa.selenium.chrome.ChromeDriver$ChromeDriverCommandExecutor.<init>(ChromeDriver.java:111) ~[selenium-chrome-driver-4.8.3.jar:?]
+	at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:101) ~[selenium-chrome-driver-4.8.3.jar:?]
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88) ~[selenium-chrome-driver-4.8.3.jar:?]
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:84) ~[selenium-chrome-driver-4.8.3.jar:?]
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:52) ~[selenium-chrome-driver-4.8.3.jar:?]
+	at driver.DriverSingleton.getDriver(DriverSingleton.java:21) ~[test-classes/:?]
 	at test.CommonConditions.browseSetUp(CommonConditions.java:16) ~[test-classes/:?]
 	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
 	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
@@ -143,241 +141,241 @@ java.lang.IllegalAccessException: class io.netty.util.internal.PlatformDependent
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169) ~[surefire-booter-3.0.0-M8.jar:3.0.0-M8]
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595) ~[surefire-booter-3.0.0-M8.jar:3.0.0-M8]
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581) ~[surefire-booter-3.0.0-M8.jar:3.0.0-M8]
-2023-04-05 02:12:47,052 DEBUG internal.PlatformDependent0 [main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:482) java.nio.DirectByteBuffer.<init>(long, int): unavailable
-2023-04-05 02:12:47,052 DEBUG internal.PlatformDependent [main] io.netty.util.internal.PlatformDependent.unsafeUnavailabilityCause0(PlatformDependent.java:1159) sun.misc.Unsafe: available
-2023-04-05 02:12:47,053 DEBUG internal.PlatformDependent [main] io.netty.util.internal.PlatformDependent.estimateMaxDirectMemory(PlatformDependent.java:1270) maxDirectMemory: 4227858432 bytes (maybe)
-2023-04-05 02:12:47,053 DEBUG internal.PlatformDependent [main] io.netty.util.internal.PlatformDependent.tmpdir0(PlatformDependent.java:1289) -Dio.netty.tmpdir: C:\Users\ASUS\AppData\Local\Temp (java.io.tmpdir)
-2023-04-05 02:12:47,053 DEBUG internal.PlatformDependent [main] io.netty.util.internal.PlatformDependent.bitMode0(PlatformDependent.java:1368) -Dio.netty.bitMode: 64 (sun.arch.data.model)
-2023-04-05 02:12:47,053 DEBUG internal.PlatformDependent [main] io.netty.util.internal.PlatformDependent.isWindows0(PlatformDependent.java:1119) Platform: Windows
-2023-04-05 02:12:47,054 DEBUG internal.PlatformDependent [main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:178) -Dio.netty.maxDirectMemory: -1 bytes
-2023-04-05 02:12:47,054 DEBUG internal.PlatformDependent [main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:185) -Dio.netty.uninitializedArrayAllocationThreshold: -1
-2023-04-05 02:12:47,055 DEBUG internal.CleanerJava9 [main] io.netty.util.internal.CleanerJava9.<clinit>(CleanerJava9.java:71) java.nio.ByteBuffer.cleaner(): available
-2023-04-05 02:12:47,055 DEBUG internal.PlatformDependent [main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:205) -Dio.netty.noPreferDirect: false
-2023-04-05 02:12:47,059 DEBUG internal.PlatformDependent [main] io.netty.util.internal.PlatformDependent$Mpsc.<clinit>(PlatformDependent.java:1010) org.jctools-core.MpscChunkedArrayQueue: available
-2023-04-05 02:12:47,069 DEBUG internal.InternalThreadLocalMap [main] io.netty.util.internal.InternalThreadLocalMap.<clinit>(InternalThreadLocalMap.java:100) -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
-2023-04-05 02:12:47,070 DEBUG internal.InternalThreadLocalMap [main] io.netty.util.internal.InternalThreadLocalMap.<clinit>(InternalThreadLocalMap.java:101) -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
-2023-04-05 02:12:47,079 DEBUG ssl.JdkSslContext [main] io.netty.handler.ssl.JdkSslContext.<clinit>(JdkSslContext.java:83) Default protocols (JDK): [TLSv1.3, TLSv1.2] 
-2023-04-05 02:12:47,079 DEBUG ssl.JdkSslContext [main] io.netty.handler.ssl.JdkSslContext.<clinit>(JdkSslContext.java:84) Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
-2023-04-05 02:12:47,088 DEBUG concurrent.GlobalEventExecutor [main] io.netty.util.concurrent.GlobalEventExecutor.<clinit>(GlobalEventExecutor.java:53) -Dio.netty.globalEventExecutor.quietPeriodSeconds: 1
-2023-04-05 02:12:47,096 DEBUG channel.MultithreadEventLoopGroup [main] io.netty.channel.MultithreadEventLoopGroup.<clinit>(MultithreadEventLoopGroup.java:44) -Dio.netty.eventLoopThreads: 24
-2023-04-05 02:12:47,102 DEBUG nio.NioEventLoop [main] io.netty.channel.nio.NioEventLoop.<clinit>(NioEventLoop.java:110) -Dio.netty.noKeySetOptimization: false
-2023-04-05 02:12:47,102 DEBUG nio.NioEventLoop [main] io.netty.channel.nio.NioEventLoop.<clinit>(NioEventLoop.java:111) -Dio.netty.selectorAutoRebuildThreshold: 512
-2023-04-05 02:12:47,109 TRACE nio.NioEventLoop [main] io.netty.channel.nio.NioEventLoop.openSelector(NioEventLoop.java:264) instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@3f9270ed
-2023-04-05 02:12:47,110 TRACE nio.NioEventLoop [main] io.netty.channel.nio.NioEventLoop.openSelector(NioEventLoop.java:264) instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@249e0271
-2023-04-05 02:12:47,111 TRACE nio.NioEventLoop [main] io.netty.channel.nio.NioEventLoop.openSelector(NioEventLoop.java:264) instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@4893b344
-2023-04-05 02:12:47,112 TRACE nio.NioEventLoop [main] io.netty.channel.nio.NioEventLoop.openSelector(NioEventLoop.java:264) instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@53a665ad
-2023-04-05 02:12:47,113 TRACE nio.NioEventLoop [main] io.netty.channel.nio.NioEventLoop.openSelector(NioEventLoop.java:264) instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@2c0b4c83
-2023-04-05 02:12:47,114 TRACE nio.NioEventLoop [main] io.netty.channel.nio.NioEventLoop.openSelector(NioEventLoop.java:264) instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@78525ef9
-2023-04-05 02:12:47,115 TRACE nio.NioEventLoop [main] io.netty.channel.nio.NioEventLoop.openSelector(NioEventLoop.java:264) instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@2d0ecb24
-2023-04-05 02:12:47,115 TRACE nio.NioEventLoop [main] io.netty.channel.nio.NioEventLoop.openSelector(NioEventLoop.java:264) instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@4d654825
-2023-04-05 02:12:47,116 TRACE nio.NioEventLoop [main] io.netty.channel.nio.NioEventLoop.openSelector(NioEventLoop.java:264) instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@3bfc6a5e
-2023-04-05 02:12:47,117 TRACE nio.NioEventLoop [main] io.netty.channel.nio.NioEventLoop.openSelector(NioEventLoop.java:264) instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@51b35e4e
-2023-04-05 02:12:47,118 TRACE nio.NioEventLoop [main] io.netty.channel.nio.NioEventLoop.openSelector(NioEventLoop.java:264) instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@abff8b7
-2023-04-05 02:12:47,119 TRACE nio.NioEventLoop [main] io.netty.channel.nio.NioEventLoop.openSelector(NioEventLoop.java:264) instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@6d7cada5
-2023-04-05 02:12:47,120 TRACE nio.NioEventLoop [main] io.netty.channel.nio.NioEventLoop.openSelector(NioEventLoop.java:264) instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@350a94ce
-2023-04-05 02:12:47,120 TRACE nio.NioEventLoop [main] io.netty.channel.nio.NioEventLoop.openSelector(NioEventLoop.java:264) instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@7e00ed0f
-2023-04-05 02:12:47,121 TRACE nio.NioEventLoop [main] io.netty.channel.nio.NioEventLoop.openSelector(NioEventLoop.java:264) instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@b0fc838
-2023-04-05 02:12:47,122 TRACE nio.NioEventLoop [main] io.netty.channel.nio.NioEventLoop.openSelector(NioEventLoop.java:264) instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@3964d79
-2023-04-05 02:12:47,123 TRACE nio.NioEventLoop [main] io.netty.channel.nio.NioEventLoop.openSelector(NioEventLoop.java:264) instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@62db0521
-2023-04-05 02:12:47,123 TRACE nio.NioEventLoop [main] io.netty.channel.nio.NioEventLoop.openSelector(NioEventLoop.java:264) instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@1b4ae4e0
-2023-04-05 02:12:47,124 TRACE nio.NioEventLoop [main] io.netty.channel.nio.NioEventLoop.openSelector(NioEventLoop.java:264) instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@6ef1a1b9
-2023-04-05 02:12:47,125 TRACE nio.NioEventLoop [main] io.netty.channel.nio.NioEventLoop.openSelector(NioEventLoop.java:264) instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@5fbdc49b
-2023-04-05 02:12:47,126 TRACE nio.NioEventLoop [main] io.netty.channel.nio.NioEventLoop.openSelector(NioEventLoop.java:264) instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@65753040
-2023-04-05 02:12:47,127 TRACE nio.NioEventLoop [main] io.netty.channel.nio.NioEventLoop.openSelector(NioEventLoop.java:264) instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@2954b5ea
-2023-04-05 02:12:47,128 TRACE nio.NioEventLoop [main] io.netty.channel.nio.NioEventLoop.openSelector(NioEventLoop.java:264) instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@4acb2510
-2023-04-05 02:12:47,128 TRACE nio.NioEventLoop [main] io.netty.channel.nio.NioEventLoop.openSelector(NioEventLoop.java:264) instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@7be3a9ce
-2023-04-05 02:12:47,140 DEBUG buffer.PooledByteBufAllocator [main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:157) -Dio.netty.allocator.numHeapArenas: 24
-2023-04-05 02:12:47,140 DEBUG buffer.PooledByteBufAllocator [main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:158) -Dio.netty.allocator.numDirectArenas: 24
-2023-04-05 02:12:47,140 DEBUG buffer.PooledByteBufAllocator [main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:160) -Dio.netty.allocator.pageSize: 8192
-2023-04-05 02:12:47,140 DEBUG buffer.PooledByteBufAllocator [main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:165) -Dio.netty.allocator.maxOrder: 9
-2023-04-05 02:12:47,140 DEBUG buffer.PooledByteBufAllocator [main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:169) -Dio.netty.allocator.chunkSize: 4194304
-2023-04-05 02:12:47,141 DEBUG buffer.PooledByteBufAllocator [main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:170) -Dio.netty.allocator.smallCacheSize: 256
-2023-04-05 02:12:47,141 DEBUG buffer.PooledByteBufAllocator [main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:171) -Dio.netty.allocator.normalCacheSize: 64
-2023-04-05 02:12:47,141 DEBUG buffer.PooledByteBufAllocator [main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:172) -Dio.netty.allocator.maxCachedBufferCapacity: 32768
-2023-04-05 02:12:47,141 DEBUG buffer.PooledByteBufAllocator [main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:173) -Dio.netty.allocator.cacheTrimInterval: 8192
-2023-04-05 02:12:47,141 DEBUG buffer.PooledByteBufAllocator [main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:174) -Dio.netty.allocator.cacheTrimIntervalMillis: 0
-2023-04-05 02:12:47,141 DEBUG buffer.PooledByteBufAllocator [main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:175) -Dio.netty.allocator.useCacheForAllThreads: false
-2023-04-05 02:12:47,142 DEBUG buffer.PooledByteBufAllocator [main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:176) -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
-2023-04-05 02:12:47,149 DEBUG buffer.ByteBufUtil [main] io.netty.buffer.ByteBufUtil.<clinit>(ByteBufUtil.java:88) -Dio.netty.allocator.type: pooled
-2023-04-05 02:12:47,149 DEBUG buffer.ByteBufUtil [main] io.netty.buffer.ByteBufUtil.<clinit>(ByteBufUtil.java:97) -Dio.netty.threadLocalDirectBufferSize: 0
-2023-04-05 02:12:47,149 DEBUG buffer.ByteBufUtil [main] io.netty.buffer.ByteBufUtil.<clinit>(ByteBufUtil.java:100) -Dio.netty.maxThreadLocalCharBufferSize: 16384
-2023-04-05 02:12:47,343 DEBUG channel.DefaultChannelId [Forwarding newSession on session null to remote] io.netty.channel.DefaultChannelId.<clinit>(DefaultChannelId.java:79) -Dio.netty.processId: 19880 (auto-detected)
-2023-04-05 02:12:47,347 DEBUG util.NetUtil [Forwarding newSession on session null to remote] io.netty.util.NetUtil.<clinit>(NetUtil.java:142) -Djava.net.preferIPv4Stack: false
-2023-04-05 02:12:47,348 DEBUG util.NetUtil [Forwarding newSession on session null to remote] io.netty.util.NetUtil.<clinit>(NetUtil.java:143) -Djava.net.preferIPv6Addresses: false
-2023-04-05 02:12:47,354 DEBUG util.NetUtilInitializations [Forwarding newSession on session null to remote] io.netty.util.NetUtilInitializations.determineLoopback(NetUtilInitializations.java:145) Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
-2023-04-05 02:12:47,354 DEBUG util.NetUtil [Forwarding newSession on session null to remote] io.netty.util.NetUtil$SoMaxConnAction.run(NetUtil.java:200) Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
-2023-04-05 02:12:47,368 DEBUG channel.DefaultChannelId [Forwarding newSession on session null to remote] io.netty.channel.DefaultChannelId.<clinit>(DefaultChannelId.java:101) -Dio.netty.machineId: b4:8c:9d:ff:fe:c9:70:f1 (auto-detected)
-2023-04-05 02:12:47,394 DEBUG buffer.AbstractByteBuf [AsyncHttpClient-1-2] io.netty.buffer.AbstractByteBuf.<clinit>(AbstractByteBuf.java:63) -Dio.netty.buffer.checkAccessible: true
-2023-04-05 02:12:47,395 DEBUG buffer.AbstractByteBuf [AsyncHttpClient-1-2] io.netty.buffer.AbstractByteBuf.<clinit>(AbstractByteBuf.java:64) -Dio.netty.buffer.checkBounds: true
-2023-04-05 02:12:47,395 DEBUG util.ResourceLeakDetectorFactory [AsyncHttpClient-1-2] io.netty.util.ResourceLeakDetectorFactory$DefaultResourceLeakDetectorFactory.newResourceLeakDetector(ResourceLeakDetectorFactory.java:196) Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@53d66638
-2023-04-05 02:12:47,411 DEBUG util.Recycler [AsyncHttpClient-1-2] io.netty.util.Recycler.<clinit>(Recycler.java:96) -Dio.netty.recycler.maxCapacityPerThread: 4096
-2023-04-05 02:12:47,411 DEBUG util.Recycler [AsyncHttpClient-1-2] io.netty.util.Recycler.<clinit>(Recycler.java:97) -Dio.netty.recycler.ratio: 8
-2023-04-05 02:12:47,411 DEBUG util.Recycler [AsyncHttpClient-1-2] io.netty.util.Recycler.<clinit>(Recycler.java:98) -Dio.netty.recycler.chunkSize: 32
-2023-04-05 02:12:47,411 DEBUG util.Recycler [AsyncHttpClient-1-2] io.netty.util.Recycler.<clinit>(Recycler.java:99) -Dio.netty.recycler.blocking: false
-2023-04-05 02:12:47,412 DEBUG util.Recycler [AsyncHttpClient-1-2] io.netty.util.Recycler.<clinit>(Recycler.java:100) -Dio.netty.recycler.batchFastThreadLocalOnly: true
-2023-04-05 02:12:47,885 DEBUG compression.Brotli [AsyncHttpClient-1-2] io.netty.handler.codec.compression.Brotli.<clinit>(Brotli.java:38) brotli4j not in the classpath; Brotli support will be unavailable.
-2023-04-05 02:12:47,939 DEBUG internal.ThreadLocalRandom [main] io.netty.util.internal.ThreadLocalRandom.newSeed(ThreadLocalRandom.java:214) -Dio.netty.initialSeedUniquifier: 0x923c24095ccde3b3
-2023-04-05 02:12:49,283 INFO  [main] page.VirtKeyHomePage.openPage(VirtKeyHomePage.java:29) Was opened 'Virtual Keyboard' page with URL: [https://virtual-keyboard-app.vercel.app/]
-2023-04-05 02:12:49,291 TRACE websocketx.WebSocket08FrameEncoder [AsyncHttpClient-1-4] io.netty.handler.codec.http.websocketx.WebSocket08FrameEncoder.encode(WebSocket08FrameEncoder.java:129) Encoding WebSocket Frame opCode=8 length=26
-2023-04-05 02:12:50,841 INFO  [main] page.VirtKeyHomePage.openPage(VirtKeyHomePage.java:29) Was opened 'Virtual Keyboard' page with URL: [https://virtual-keyboard-app.vercel.app/]
-2023-04-05 02:12:50,888 INFO  [main] page.VirtKeyHomePage.showKeyboard(VirtKeyHomePage.java:36) Was showed keyboard on the screen
-2023-04-05 02:12:50,899 TRACE websocketx.WebSocket08FrameEncoder [AsyncHttpClient-1-7] io.netty.handler.codec.http.websocketx.WebSocket08FrameEncoder.encode(WebSocket08FrameEncoder.java:129) Encoding WebSocket Frame opCode=8 length=26
-2023-04-05 02:12:52,509 INFO  [main] page.VirtKeyHomePage.openPage(VirtKeyHomePage.java:29) Was opened 'Virtual Keyboard' page with URL: [https://virtual-keyboard-app.vercel.app/]
-2023-04-05 02:12:52,557 INFO  [main] page.VirtKeyHomePage.showKeyboard(VirtKeyHomePage.java:36) Was showed keyboard on the screen
-2023-04-05 02:12:52,583 TRACE websocketx.WebSocket08FrameEncoder [AsyncHttpClient-1-10] io.netty.handler.codec.http.websocketx.WebSocket08FrameEncoder.encode(WebSocket08FrameEncoder.java:129) Encoding WebSocket Frame opCode=8 length=26
-2023-04-05 02:12:54,426 INFO  [main] page.VirtKeyHomePage.openPage(VirtKeyHomePage.java:29) Was opened 'Virtual Keyboard' page with URL: [https://virtual-keyboard-app.vercel.app/]
-2023-04-05 02:12:54,472 INFO  [main] page.VirtKeyHomePage.showKeyboard(VirtKeyHomePage.java:36) Was showed keyboard on the screen
-2023-04-05 02:12:54,484 INFO  [main] page.VirtKeyHomePage.createEnglishShiftMap(VirtKeyHomePage.java:145) Was created english Shift Map
-2023-04-05 02:12:54,484 INFO  [main] page.VirtKeyHomePage.createRussianShiftMap(VirtKeyHomePage.java:158) Was created russian Shift Map
-2023-04-05 02:12:54,484 INFO  [main] page.VirtKeyHomePage.createEnRuMap(VirtKeyHomePage.java:169) Was created EN/RU Map
-2023-04-05 02:12:55,813 INFO  [main] page.VirtKeyHomePage.writeText(VirtKeyHomePage.java:123) Was wrote text 'hello ;-=`'123\/.[]'
-2023-04-05 02:12:55,814 TRACE websocketx.WebSocket08FrameEncoder [AsyncHttpClient-1-13] io.netty.handler.codec.http.websocketx.WebSocket08FrameEncoder.encode(WebSocket08FrameEncoder.java:129) Encoding WebSocket Frame opCode=8 length=26
-2023-04-05 02:12:57,313 INFO  [main] page.VirtKeyHomePage.openPage(VirtKeyHomePage.java:29) Was opened 'Virtual Keyboard' page with URL: [https://virtual-keyboard-app.vercel.app/]
-2023-04-05 02:12:57,358 INFO  [main] page.VirtKeyHomePage.showKeyboard(VirtKeyHomePage.java:36) Was showed keyboard on the screen
-2023-04-05 02:12:57,372 INFO  [main] page.VirtKeyHomePage.createEnglishShiftMap(VirtKeyHomePage.java:145) Was created english Shift Map
-2023-04-05 02:12:57,372 INFO  [main] page.VirtKeyHomePage.createRussianShiftMap(VirtKeyHomePage.java:158) Was created russian Shift Map
-2023-04-05 02:12:57,372 INFO  [main] page.VirtKeyHomePage.createEnRuMap(VirtKeyHomePage.java:169) Was created EN/RU Map
-2023-04-05 02:12:57,372 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
-2023-04-05 02:12:58,964 INFO  [main] page.VirtKeyHomePage.writeText(VirtKeyHomePage.java:123) Was wrote text 'HELLO ~!@#$%^&*()_+{}|:"<>?'
-2023-04-05 02:12:58,965 TRACE websocketx.WebSocket08FrameEncoder [AsyncHttpClient-1-16] io.netty.handler.codec.http.websocketx.WebSocket08FrameEncoder.encode(WebSocket08FrameEncoder.java:129) Encoding WebSocket Frame opCode=8 length=26
-2023-04-05 02:13:00,982 INFO  [main] page.VirtKeyHomePage.openPage(VirtKeyHomePage.java:29) Was opened 'Virtual Keyboard' page with URL: [https://virtual-keyboard-app.vercel.app/]
-2023-04-05 02:13:01,025 INFO  [main] page.VirtKeyHomePage.showKeyboard(VirtKeyHomePage.java:36) Was showed keyboard on the screen
-2023-04-05 02:13:01,037 INFO  [main] page.VirtKeyHomePage.createEnglishShiftMap(VirtKeyHomePage.java:145) Was created english Shift Map
-2023-04-05 02:13:01,038 INFO  [main] page.VirtKeyHomePage.createRussianShiftMap(VirtKeyHomePage.java:158) Was created russian Shift Map
-2023-04-05 02:13:01,038 INFO  [main] page.VirtKeyHomePage.createEnRuMap(VirtKeyHomePage.java:169) Was created EN/RU Map
-2023-04-05 02:13:01,038 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
-2023-04-05 02:13:01,607 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
-2023-04-05 02:13:01,650 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
-2023-04-05 02:13:01,721 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
-2023-04-05 02:13:01,799 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
-2023-04-05 02:13:02,046 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
-2023-04-05 02:13:02,158 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
-2023-04-05 02:13:02,360 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
-2023-04-05 02:13:02,443 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
-2023-04-05 02:13:02,746 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
-2023-04-05 02:13:02,803 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
-2023-04-05 02:13:02,885 INFO  [main] page.VirtKeyHomePage.writeText(VirtKeyHomePage.java:123) Was wrote text 'HeLLo ~!@#$%her^&*()345_+{}|:"<[]>?'
-2023-04-05 02:13:02,886 TRACE websocketx.WebSocket08FrameEncoder [AsyncHttpClient-1-19] io.netty.handler.codec.http.websocketx.WebSocket08FrameEncoder.encode(WebSocket08FrameEncoder.java:129) Encoding WebSocket Frame opCode=8 length=26
-2023-04-05 02:13:04,256 INFO  [main] page.VirtKeyHomePage.openPage(VirtKeyHomePage.java:29) Was opened 'Virtual Keyboard' page with URL: [https://virtual-keyboard-app.vercel.app/]
-2023-04-05 02:13:04,299 INFO  [main] page.VirtKeyHomePage.showKeyboard(VirtKeyHomePage.java:36) Was showed keyboard on the screen
-2023-04-05 02:13:04,312 INFO  [main] page.VirtKeyHomePage.createEnglishShiftMap(VirtKeyHomePage.java:145) Was created english Shift Map
-2023-04-05 02:13:04,313 INFO  [main] page.VirtKeyHomePage.createRussianShiftMap(VirtKeyHomePage.java:158) Was created russian Shift Map
-2023-04-05 02:13:04,313 INFO  [main] page.VirtKeyHomePage.createEnRuMap(VirtKeyHomePage.java:169) Was created EN/RU Map
-2023-04-05 02:13:04,313 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
-2023-04-05 02:13:05,429 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
-2023-04-05 02:13:05,915 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
-2023-04-05 02:13:06,857 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
-2023-04-05 02:13:06,898 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
-2023-04-05 02:13:07,245 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
-2023-04-05 02:13:07,279 INFO  [main] page.VirtKeyHomePage.writeText(VirtKeyHomePage.java:123) Was wrote text '∏1234567890-=ÈˆÛÍÂ Ì„¯˘Áı˙
+2023-04-05 02:40:00,662 DEBUG internal.PlatformDependent0 [main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:482) java.nio.DirectByteBuffer.<init>(long, int): unavailable
+2023-04-05 02:40:00,662 DEBUG internal.PlatformDependent [main] io.netty.util.internal.PlatformDependent.unsafeUnavailabilityCause0(PlatformDependent.java:1159) sun.misc.Unsafe: available
+2023-04-05 02:40:00,662 DEBUG internal.PlatformDependent [main] io.netty.util.internal.PlatformDependent.estimateMaxDirectMemory(PlatformDependent.java:1270) maxDirectMemory: 4227858432 bytes (maybe)
+2023-04-05 02:40:00,662 DEBUG internal.PlatformDependent [main] io.netty.util.internal.PlatformDependent.tmpdir0(PlatformDependent.java:1289) -Dio.netty.tmpdir: C:\Users\ASUS\AppData\Local\Temp (java.io.tmpdir)
+2023-04-05 02:40:00,662 DEBUG internal.PlatformDependent [main] io.netty.util.internal.PlatformDependent.bitMode0(PlatformDependent.java:1368) -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2023-04-05 02:40:00,662 DEBUG internal.PlatformDependent [main] io.netty.util.internal.PlatformDependent.isWindows0(PlatformDependent.java:1119) Platform: Windows
+2023-04-05 02:40:00,677 DEBUG internal.PlatformDependent [main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:178) -Dio.netty.maxDirectMemory: -1 bytes
+2023-04-05 02:40:00,677 DEBUG internal.PlatformDependent [main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:185) -Dio.netty.uninitializedArrayAllocationThreshold: -1
+2023-04-05 02:40:00,677 DEBUG internal.CleanerJava9 [main] io.netty.util.internal.CleanerJava9.<clinit>(CleanerJava9.java:71) java.nio.ByteBuffer.cleaner(): available
+2023-04-05 02:40:00,677 DEBUG internal.PlatformDependent [main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:205) -Dio.netty.noPreferDirect: false
+2023-04-05 02:40:00,677 DEBUG internal.PlatformDependent [main] io.netty.util.internal.PlatformDependent$Mpsc.<clinit>(PlatformDependent.java:1010) org.jctools-core.MpscChunkedArrayQueue: available
+2023-04-05 02:40:00,693 DEBUG internal.InternalThreadLocalMap [main] io.netty.util.internal.InternalThreadLocalMap.<clinit>(InternalThreadLocalMap.java:100) -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+2023-04-05 02:40:00,693 DEBUG internal.InternalThreadLocalMap [main] io.netty.util.internal.InternalThreadLocalMap.<clinit>(InternalThreadLocalMap.java:101) -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+2023-04-05 02:40:00,725 DEBUG ssl.JdkSslContext [main] io.netty.handler.ssl.JdkSslContext.<clinit>(JdkSslContext.java:83) Default protocols (JDK): [TLSv1.3, TLSv1.2] 
+2023-04-05 02:40:00,725 DEBUG ssl.JdkSslContext [main] io.netty.handler.ssl.JdkSslContext.<clinit>(JdkSslContext.java:84) Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
+2023-04-05 02:40:00,725 DEBUG concurrent.GlobalEventExecutor [main] io.netty.util.concurrent.GlobalEventExecutor.<clinit>(GlobalEventExecutor.java:53) -Dio.netty.globalEventExecutor.quietPeriodSeconds: 1
+2023-04-05 02:40:00,740 DEBUG channel.MultithreadEventLoopGroup [main] io.netty.channel.MultithreadEventLoopGroup.<clinit>(MultithreadEventLoopGroup.java:44) -Dio.netty.eventLoopThreads: 24
+2023-04-05 02:40:00,740 DEBUG nio.NioEventLoop [main] io.netty.channel.nio.NioEventLoop.<clinit>(NioEventLoop.java:110) -Dio.netty.noKeySetOptimization: false
+2023-04-05 02:40:00,740 DEBUG nio.NioEventLoop [main] io.netty.channel.nio.NioEventLoop.<clinit>(NioEventLoop.java:111) -Dio.netty.selectorAutoRebuildThreshold: 512
+2023-04-05 02:40:00,740 TRACE nio.NioEventLoop [main] io.netty.channel.nio.NioEventLoop.openSelector(NioEventLoop.java:264) instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@5cdf39b2
+2023-04-05 02:40:00,740 TRACE nio.NioEventLoop [main] io.netty.channel.nio.NioEventLoop.openSelector(NioEventLoop.java:264) instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@1cc9cfb2
+2023-04-05 02:40:00,756 TRACE nio.NioEventLoop [main] io.netty.channel.nio.NioEventLoop.openSelector(NioEventLoop.java:264) instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@cfbc8e8
+2023-04-05 02:40:00,756 TRACE nio.NioEventLoop [main] io.netty.channel.nio.NioEventLoop.openSelector(NioEventLoop.java:264) instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@3bead518
+2023-04-05 02:40:00,756 TRACE nio.NioEventLoop [main] io.netty.channel.nio.NioEventLoop.openSelector(NioEventLoop.java:264) instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@14bf57b2
+2023-04-05 02:40:00,756 TRACE nio.NioEventLoop [main] io.netty.channel.nio.NioEventLoop.openSelector(NioEventLoop.java:264) instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@46d9aec8
+2023-04-05 02:40:00,756 TRACE nio.NioEventLoop [main] io.netty.channel.nio.NioEventLoop.openSelector(NioEventLoop.java:264) instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@14379273
+2023-04-05 02:40:00,756 TRACE nio.NioEventLoop [main] io.netty.channel.nio.NioEventLoop.openSelector(NioEventLoop.java:264) instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@7918c7f8
+2023-04-05 02:40:00,756 TRACE nio.NioEventLoop [main] io.netty.channel.nio.NioEventLoop.openSelector(NioEventLoop.java:264) instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@17740dae
+2023-04-05 02:40:00,756 TRACE nio.NioEventLoop [main] io.netty.channel.nio.NioEventLoop.openSelector(NioEventLoop.java:264) instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@1c504e66
+2023-04-05 02:40:00,756 TRACE nio.NioEventLoop [main] io.netty.channel.nio.NioEventLoop.openSelector(NioEventLoop.java:264) instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@345cf395
+2023-04-05 02:40:00,756 TRACE nio.NioEventLoop [main] io.netty.channel.nio.NioEventLoop.openSelector(NioEventLoop.java:264) instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@bc4d5e1
+2023-04-05 02:40:00,756 TRACE nio.NioEventLoop [main] io.netty.channel.nio.NioEventLoop.openSelector(NioEventLoop.java:264) instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@3c6aa04a
+2023-04-05 02:40:00,756 TRACE nio.NioEventLoop [main] io.netty.channel.nio.NioEventLoop.openSelector(NioEventLoop.java:264) instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@2257fadf
+2023-04-05 02:40:00,756 TRACE nio.NioEventLoop [main] io.netty.channel.nio.NioEventLoop.openSelector(NioEventLoop.java:264) instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@7144655b
+2023-04-05 02:40:00,756 TRACE nio.NioEventLoop [main] io.netty.channel.nio.NioEventLoop.openSelector(NioEventLoop.java:264) instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@5c82cd4f
+2023-04-05 02:40:00,756 TRACE nio.NioEventLoop [main] io.netty.channel.nio.NioEventLoop.openSelector(NioEventLoop.java:264) instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@35835e65
+2023-04-05 02:40:00,756 TRACE nio.NioEventLoop [main] io.netty.channel.nio.NioEventLoop.openSelector(NioEventLoop.java:264) instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@289fdb08
+2023-04-05 02:40:00,756 TRACE nio.NioEventLoop [main] io.netty.channel.nio.NioEventLoop.openSelector(NioEventLoop.java:264) instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@7a231dfd
+2023-04-05 02:40:00,756 TRACE nio.NioEventLoop [main] io.netty.channel.nio.NioEventLoop.openSelector(NioEventLoop.java:264) instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@30814f43
+2023-04-05 02:40:00,771 TRACE nio.NioEventLoop [main] io.netty.channel.nio.NioEventLoop.openSelector(NioEventLoop.java:264) instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@1fde4f40
+2023-04-05 02:40:00,771 TRACE nio.NioEventLoop [main] io.netty.channel.nio.NioEventLoop.openSelector(NioEventLoop.java:264) instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@49cf9028
+2023-04-05 02:40:00,771 TRACE nio.NioEventLoop [main] io.netty.channel.nio.NioEventLoop.openSelector(NioEventLoop.java:264) instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@2b61a019
+2023-04-05 02:40:00,771 TRACE nio.NioEventLoop [main] io.netty.channel.nio.NioEventLoop.openSelector(NioEventLoop.java:264) instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@11a00961
+2023-04-05 02:40:00,771 DEBUG buffer.PooledByteBufAllocator [main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:157) -Dio.netty.allocator.numHeapArenas: 24
+2023-04-05 02:40:00,771 DEBUG buffer.PooledByteBufAllocator [main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:158) -Dio.netty.allocator.numDirectArenas: 24
+2023-04-05 02:40:00,771 DEBUG buffer.PooledByteBufAllocator [main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:160) -Dio.netty.allocator.pageSize: 8192
+2023-04-05 02:40:00,771 DEBUG buffer.PooledByteBufAllocator [main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:165) -Dio.netty.allocator.maxOrder: 9
+2023-04-05 02:40:00,771 DEBUG buffer.PooledByteBufAllocator [main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:169) -Dio.netty.allocator.chunkSize: 4194304
+2023-04-05 02:40:00,771 DEBUG buffer.PooledByteBufAllocator [main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:170) -Dio.netty.allocator.smallCacheSize: 256
+2023-04-05 02:40:00,771 DEBUG buffer.PooledByteBufAllocator [main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:171) -Dio.netty.allocator.normalCacheSize: 64
+2023-04-05 02:40:00,787 DEBUG buffer.PooledByteBufAllocator [main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:172) -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2023-04-05 02:40:00,787 DEBUG buffer.PooledByteBufAllocator [main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:173) -Dio.netty.allocator.cacheTrimInterval: 8192
+2023-04-05 02:40:00,787 DEBUG buffer.PooledByteBufAllocator [main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:174) -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+2023-04-05 02:40:00,787 DEBUG buffer.PooledByteBufAllocator [main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:175) -Dio.netty.allocator.useCacheForAllThreads: false
+2023-04-05 02:40:00,787 DEBUG buffer.PooledByteBufAllocator [main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:176) -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+2023-04-05 02:40:00,787 DEBUG buffer.ByteBufUtil [main] io.netty.buffer.ByteBufUtil.<clinit>(ByteBufUtil.java:88) -Dio.netty.allocator.type: pooled
+2023-04-05 02:40:00,787 DEBUG buffer.ByteBufUtil [main] io.netty.buffer.ByteBufUtil.<clinit>(ByteBufUtil.java:97) -Dio.netty.threadLocalDirectBufferSize: 0
+2023-04-05 02:40:00,787 DEBUG buffer.ByteBufUtil [main] io.netty.buffer.ByteBufUtil.<clinit>(ByteBufUtil.java:100) -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2023-04-05 02:40:00,980 DEBUG channel.DefaultChannelId [Forwarding newSession on session null to remote] io.netty.channel.DefaultChannelId.<clinit>(DefaultChannelId.java:79) -Dio.netty.processId: 13128 (auto-detected)
+2023-04-05 02:40:00,980 DEBUG util.NetUtil [Forwarding newSession on session null to remote] io.netty.util.NetUtil.<clinit>(NetUtil.java:142) -Djava.net.preferIPv4Stack: false
+2023-04-05 02:40:00,980 DEBUG util.NetUtil [Forwarding newSession on session null to remote] io.netty.util.NetUtil.<clinit>(NetUtil.java:143) -Djava.net.preferIPv6Addresses: false
+2023-04-05 02:40:00,980 DEBUG util.NetUtilInitializations [Forwarding newSession on session null to remote] io.netty.util.NetUtilInitializations.determineLoopback(NetUtilInitializations.java:145) Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+2023-04-05 02:40:00,996 DEBUG util.NetUtil [Forwarding newSession on session null to remote] io.netty.util.NetUtil$SoMaxConnAction.run(NetUtil.java:200) Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+2023-04-05 02:40:00,996 DEBUG channel.DefaultChannelId [Forwarding newSession on session null to remote] io.netty.channel.DefaultChannelId.<clinit>(DefaultChannelId.java:101) -Dio.netty.machineId: b4:8c:9d:ff:fe:c9:70:f1 (auto-detected)
+2023-04-05 02:40:01,028 DEBUG buffer.AbstractByteBuf [AsyncHttpClient-1-2] io.netty.buffer.AbstractByteBuf.<clinit>(AbstractByteBuf.java:63) -Dio.netty.buffer.checkAccessible: true
+2023-04-05 02:40:01,028 DEBUG buffer.AbstractByteBuf [AsyncHttpClient-1-2] io.netty.buffer.AbstractByteBuf.<clinit>(AbstractByteBuf.java:64) -Dio.netty.buffer.checkBounds: true
+2023-04-05 02:40:01,028 DEBUG util.ResourceLeakDetectorFactory [AsyncHttpClient-1-2] io.netty.util.ResourceLeakDetectorFactory$DefaultResourceLeakDetectorFactory.newResourceLeakDetector(ResourceLeakDetectorFactory.java:196) Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@3b1cb288
+2023-04-05 02:40:01,043 DEBUG util.Recycler [AsyncHttpClient-1-2] io.netty.util.Recycler.<clinit>(Recycler.java:96) -Dio.netty.recycler.maxCapacityPerThread: 4096
+2023-04-05 02:40:01,043 DEBUG util.Recycler [AsyncHttpClient-1-2] io.netty.util.Recycler.<clinit>(Recycler.java:97) -Dio.netty.recycler.ratio: 8
+2023-04-05 02:40:01,043 DEBUG util.Recycler [AsyncHttpClient-1-2] io.netty.util.Recycler.<clinit>(Recycler.java:98) -Dio.netty.recycler.chunkSize: 32
+2023-04-05 02:40:01,059 DEBUG util.Recycler [AsyncHttpClient-1-2] io.netty.util.Recycler.<clinit>(Recycler.java:99) -Dio.netty.recycler.blocking: false
+2023-04-05 02:40:01,059 DEBUG util.Recycler [AsyncHttpClient-1-2] io.netty.util.Recycler.<clinit>(Recycler.java:100) -Dio.netty.recycler.batchFastThreadLocalOnly: true
+2023-04-05 02:40:01,522 DEBUG compression.Brotli [AsyncHttpClient-1-2] io.netty.handler.codec.compression.Brotli.<clinit>(Brotli.java:38) brotli4j not in the classpath; Brotli support will be unavailable.
+2023-04-05 02:40:01,590 DEBUG internal.ThreadLocalRandom [main] io.netty.util.internal.ThreadLocalRandom.newSeed(ThreadLocalRandom.java:214) -Dio.netty.initialSeedUniquifier: 0xfa4a2f8232688fce
+2023-04-05 02:40:02,598 INFO  [main] page.VirtKeyHomePage.openPage(VirtKeyHomePage.java:29) Was opened 'Virtual Keyboard' page with URL: [https://virtual-keyboard-app.vercel.app/]
+2023-04-05 02:40:02,598 TRACE websocketx.WebSocket08FrameEncoder [AsyncHttpClient-1-4] io.netty.handler.codec.http.websocketx.WebSocket08FrameEncoder.encode(WebSocket08FrameEncoder.java:129) Encoding WebSocket Frame opCode=8 length=26
+2023-04-05 02:40:04,964 INFO  [main] page.VirtKeyHomePage.openPage(VirtKeyHomePage.java:29) Was opened 'Virtual Keyboard' page with URL: [https://virtual-keyboard-app.vercel.app/]
+2023-04-05 02:40:05,025 INFO  [main] page.VirtKeyHomePage.showKeyboard(VirtKeyHomePage.java:36) Was showed keyboard on the screen
+2023-04-05 02:40:05,035 TRACE websocketx.WebSocket08FrameEncoder [AsyncHttpClient-1-7] io.netty.handler.codec.http.websocketx.WebSocket08FrameEncoder.encode(WebSocket08FrameEncoder.java:129) Encoding WebSocket Frame opCode=8 length=26
+2023-04-05 02:40:06,534 INFO  [main] page.VirtKeyHomePage.openPage(VirtKeyHomePage.java:29) Was opened 'Virtual Keyboard' page with URL: [https://virtual-keyboard-app.vercel.app/]
+2023-04-05 02:40:06,592 INFO  [main] page.VirtKeyHomePage.showKeyboard(VirtKeyHomePage.java:36) Was showed keyboard on the screen
+2023-04-05 02:40:06,622 TRACE websocketx.WebSocket08FrameEncoder [AsyncHttpClient-1-10] io.netty.handler.codec.http.websocketx.WebSocket08FrameEncoder.encode(WebSocket08FrameEncoder.java:129) Encoding WebSocket Frame opCode=8 length=26
+2023-04-05 02:40:08,337 INFO  [main] page.VirtKeyHomePage.openPage(VirtKeyHomePage.java:29) Was opened 'Virtual Keyboard' page with URL: [https://virtual-keyboard-app.vercel.app/]
+2023-04-05 02:40:08,395 INFO  [main] page.VirtKeyHomePage.showKeyboard(VirtKeyHomePage.java:36) Was showed keyboard on the screen
+2023-04-05 02:40:08,408 INFO  [main] page.VirtKeyHomePage.createEnglishShiftMap(VirtKeyHomePage.java:145) Was created english Shift Map
+2023-04-05 02:40:08,408 INFO  [main] page.VirtKeyHomePage.createRussianShiftMap(VirtKeyHomePage.java:158) Was created russian Shift Map
+2023-04-05 02:40:08,408 INFO  [main] page.VirtKeyHomePage.createEnRuMap(VirtKeyHomePage.java:169) Was created EN/RU Map
+2023-04-05 02:40:09,719 INFO  [main] page.VirtKeyHomePage.writeText(VirtKeyHomePage.java:123) Was wrote text 'hello ;-=`'123\/.[]'
+2023-04-05 02:40:09,720 TRACE websocketx.WebSocket08FrameEncoder [AsyncHttpClient-1-13] io.netty.handler.codec.http.websocketx.WebSocket08FrameEncoder.encode(WebSocket08FrameEncoder.java:129) Encoding WebSocket Frame opCode=8 length=26
+2023-04-05 02:40:11,838 INFO  [main] page.VirtKeyHomePage.openPage(VirtKeyHomePage.java:29) Was opened 'Virtual Keyboard' page with URL: [https://virtual-keyboard-app.vercel.app/]
+2023-04-05 02:40:11,887 INFO  [main] page.VirtKeyHomePage.showKeyboard(VirtKeyHomePage.java:36) Was showed keyboard on the screen
+2023-04-05 02:40:11,893 INFO  [main] page.VirtKeyHomePage.createEnglishShiftMap(VirtKeyHomePage.java:145) Was created english Shift Map
+2023-04-05 02:40:11,902 INFO  [main] page.VirtKeyHomePage.createRussianShiftMap(VirtKeyHomePage.java:158) Was created russian Shift Map
+2023-04-05 02:40:11,902 INFO  [main] page.VirtKeyHomePage.createEnRuMap(VirtKeyHomePage.java:169) Was created EN/RU Map
+2023-04-05 02:40:11,902 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:40:13,500 INFO  [main] page.VirtKeyHomePage.writeText(VirtKeyHomePage.java:123) Was wrote text 'HELLO ~!@#$%^&*()_+{}|:"<>?'
+2023-04-05 02:40:13,500 TRACE websocketx.WebSocket08FrameEncoder [AsyncHttpClient-1-16] io.netty.handler.codec.http.websocketx.WebSocket08FrameEncoder.encode(WebSocket08FrameEncoder.java:129) Encoding WebSocket Frame opCode=8 length=26
+2023-04-05 02:40:14,899 INFO  [main] page.VirtKeyHomePage.openPage(VirtKeyHomePage.java:29) Was opened 'Virtual Keyboard' page with URL: [https://virtual-keyboard-app.vercel.app/]
+2023-04-05 02:40:14,954 INFO  [main] page.VirtKeyHomePage.showKeyboard(VirtKeyHomePage.java:36) Was showed keyboard on the screen
+2023-04-05 02:40:14,966 INFO  [main] page.VirtKeyHomePage.createEnglishShiftMap(VirtKeyHomePage.java:145) Was created english Shift Map
+2023-04-05 02:40:14,966 INFO  [main] page.VirtKeyHomePage.createRussianShiftMap(VirtKeyHomePage.java:158) Was created russian Shift Map
+2023-04-05 02:40:14,966 INFO  [main] page.VirtKeyHomePage.createEnRuMap(VirtKeyHomePage.java:169) Was created EN/RU Map
+2023-04-05 02:40:14,966 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:40:15,542 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:40:15,585 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:40:15,656 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:40:15,738 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:40:15,972 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:40:16,074 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:40:16,274 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:40:16,370 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:40:16,692 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:40:16,749 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:40:16,835 INFO  [main] page.VirtKeyHomePage.writeText(VirtKeyHomePage.java:123) Was wrote text 'HeLLo ~!@#$%her^&*()345_+{}|:"<[]>?'
+2023-04-05 02:40:16,835 TRACE websocketx.WebSocket08FrameEncoder [AsyncHttpClient-1-19] io.netty.handler.codec.http.websocketx.WebSocket08FrameEncoder.encode(WebSocket08FrameEncoder.java:129) Encoding WebSocket Frame opCode=8 length=26
+2023-04-05 02:40:18,618 INFO  [main] page.VirtKeyHomePage.openPage(VirtKeyHomePage.java:29) Was opened 'Virtual Keyboard' page with URL: [https://virtual-keyboard-app.vercel.app/]
+2023-04-05 02:40:18,666 INFO  [main] page.VirtKeyHomePage.showKeyboard(VirtKeyHomePage.java:36) Was showed keyboard on the screen
+2023-04-05 02:40:18,673 INFO  [main] page.VirtKeyHomePage.createEnglishShiftMap(VirtKeyHomePage.java:145) Was created english Shift Map
+2023-04-05 02:40:18,673 INFO  [main] page.VirtKeyHomePage.createRussianShiftMap(VirtKeyHomePage.java:158) Was created russian Shift Map
+2023-04-05 02:40:18,673 INFO  [main] page.VirtKeyHomePage.createEnRuMap(VirtKeyHomePage.java:169) Was created EN/RU Map
+2023-04-05 02:40:18,673 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
+2023-04-05 02:40:19,757 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
+2023-04-05 02:40:20,211 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
+2023-04-05 02:40:21,194 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
+2023-04-05 02:40:21,239 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
+2023-04-05 02:40:21,608 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
+2023-04-05 02:40:21,642 INFO  [main] page.VirtKeyHomePage.writeText(VirtKeyHomePage.java:123) Was wrote text '∏1234567890-=ÈˆÛÍÂ Ì„¯˘Áı˙
 Ù˚‚‡ÔÓÎ‰Ê˝\ˇ˜ÒÏËÚ¸·˛.'
-2023-04-05 02:13:07,281 TRACE websocketx.WebSocket08FrameEncoder [AsyncHttpClient-1-22] io.netty.handler.codec.http.websocketx.WebSocket08FrameEncoder.encode(WebSocket08FrameEncoder.java:129) Encoding WebSocket Frame opCode=8 length=26
-2023-04-05 02:13:08,857 INFO  [main] page.VirtKeyHomePage.openPage(VirtKeyHomePage.java:29) Was opened 'Virtual Keyboard' page with URL: [https://virtual-keyboard-app.vercel.app/]
-2023-04-05 02:13:08,899 INFO  [main] page.VirtKeyHomePage.showKeyboard(VirtKeyHomePage.java:36) Was showed keyboard on the screen
-2023-04-05 02:13:08,909 INFO  [main] page.VirtKeyHomePage.createEnglishShiftMap(VirtKeyHomePage.java:145) Was created english Shift Map
-2023-04-05 02:13:08,909 INFO  [main] page.VirtKeyHomePage.createRussianShiftMap(VirtKeyHomePage.java:158) Was created russian Shift Map
-2023-04-05 02:13:08,909 INFO  [main] page.VirtKeyHomePage.createEnRuMap(VirtKeyHomePage.java:169) Was created EN/RU Map
-2023-04-05 02:13:08,909 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
-2023-04-05 02:13:08,914 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
-2023-04-05 02:13:10,027 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
-2023-04-05 02:13:10,102 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
-2023-04-05 02:13:10,142 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
-2023-04-05 02:13:10,158 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
-2023-04-05 02:13:10,209 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
-2023-04-05 02:13:10,510 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
-2023-04-05 02:13:11,399 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
-2023-04-05 02:13:11,440 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
-2023-04-05 02:13:11,788 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
-2023-04-05 02:13:11,794 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
-2023-04-05 02:13:11,828 INFO  [main] page.VirtKeyHomePage.writeText(VirtKeyHomePage.java:123) Was wrote text '®!"π;%:?*()_+…÷” ≈Õ√ÿŸ«’⁄
+2023-04-05 02:40:21,642 TRACE websocketx.WebSocket08FrameEncoder [AsyncHttpClient-1-22] io.netty.handler.codec.http.websocketx.WebSocket08FrameEncoder.encode(WebSocket08FrameEncoder.java:129) Encoding WebSocket Frame opCode=8 length=26
+2023-04-05 02:40:23,659 INFO  [main] page.VirtKeyHomePage.openPage(VirtKeyHomePage.java:29) Was opened 'Virtual Keyboard' page with URL: [https://virtual-keyboard-app.vercel.app/]
+2023-04-05 02:40:23,701 INFO  [main] page.VirtKeyHomePage.showKeyboard(VirtKeyHomePage.java:36) Was showed keyboard on the screen
+2023-04-05 02:40:23,701 INFO  [main] page.VirtKeyHomePage.createEnglishShiftMap(VirtKeyHomePage.java:145) Was created english Shift Map
+2023-04-05 02:40:23,701 INFO  [main] page.VirtKeyHomePage.createRussianShiftMap(VirtKeyHomePage.java:158) Was created russian Shift Map
+2023-04-05 02:40:23,701 INFO  [main] page.VirtKeyHomePage.createEnRuMap(VirtKeyHomePage.java:169) Was created EN/RU Map
+2023-04-05 02:40:23,701 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:40:23,725 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
+2023-04-05 02:40:24,828 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
+2023-04-05 02:40:24,918 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
+2023-04-05 02:40:24,961 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:40:24,970 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
+2023-04-05 02:40:25,014 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:40:25,312 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
+2023-04-05 02:40:26,245 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
+2023-04-05 02:40:26,290 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
+2023-04-05 02:40:26,659 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:40:26,667 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
+2023-04-05 02:40:26,703 INFO  [main] page.VirtKeyHomePage.writeText(VirtKeyHomePage.java:123) Was wrote text '®!"π;%:?*()_+…÷” ≈Õ√ÿŸ«’⁄
 ‘€¬¿ œ–ŒÀƒ∆›|ﬂ◊—Ã»“¡‹ﬁ,'
-2023-04-05 02:13:11,829 TRACE websocketx.WebSocket08FrameEncoder [AsyncHttpClient-1-25] io.netty.handler.codec.http.websocketx.WebSocket08FrameEncoder.encode(WebSocket08FrameEncoder.java:129) Encoding WebSocket Frame opCode=8 length=26
-2023-04-05 02:13:13,527 INFO  [main] page.VirtKeyHomePage.openPage(VirtKeyHomePage.java:29) Was opened 'Virtual Keyboard' page with URL: [https://virtual-keyboard-app.vercel.app/]
-2023-04-05 02:13:13,567 INFO  [main] page.VirtKeyHomePage.showKeyboard(VirtKeyHomePage.java:36) Was showed keyboard on the screen
-2023-04-05 02:13:13,577 INFO  [main] page.VirtKeyHomePage.createEnglishShiftMap(VirtKeyHomePage.java:145) Was created english Shift Map
-2023-04-05 02:13:13,578 INFO  [main] page.VirtKeyHomePage.createRussianShiftMap(VirtKeyHomePage.java:158) Was created russian Shift Map
-2023-04-05 02:13:13,578 INFO  [main] page.VirtKeyHomePage.createEnRuMap(VirtKeyHomePage.java:169) Was created EN/RU Map
-2023-04-05 02:13:13,578 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
-2023-04-05 02:13:13,588 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
-2023-04-05 02:13:14,653 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
-2023-04-05 02:13:14,657 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
-2023-04-05 02:13:14,805 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
-2023-04-05 02:13:14,965 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
-2023-04-05 02:13:15,045 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
-2023-04-05 02:13:15,133 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
-2023-04-05 02:13:15,177 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
-2023-04-05 02:13:15,363 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
-2023-04-05 02:13:15,689 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
-2023-04-05 02:13:15,801 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
-2023-04-05 02:13:15,972 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
-2023-04-05 02:13:16,087 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
-2023-04-05 02:13:16,132 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
-2023-04-05 02:13:16,175 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
-2023-04-05 02:13:16,293 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
-2023-04-05 02:13:16,416 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
-2023-04-05 02:13:16,531 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
-2023-04-05 02:13:16,538 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
-2023-04-05 02:13:16,567 INFO  [main] page.VirtKeyHomePage.writeText(VirtKeyHomePage.java:123) Was wrote text '®123;%:?*90_+…ˆÛÍÂÌ√ÿŸ«’⁄
+2023-04-05 02:40:26,704 TRACE websocketx.WebSocket08FrameEncoder [AsyncHttpClient-1-25] io.netty.handler.codec.http.websocketx.WebSocket08FrameEncoder.encode(WebSocket08FrameEncoder.java:129) Encoding WebSocket Frame opCode=8 length=26
+2023-04-05 02:40:28,802 INFO  [main] page.VirtKeyHomePage.openPage(VirtKeyHomePage.java:29) Was opened 'Virtual Keyboard' page with URL: [https://virtual-keyboard-app.vercel.app/]
+2023-04-05 02:40:28,843 INFO  [main] page.VirtKeyHomePage.showKeyboard(VirtKeyHomePage.java:36) Was showed keyboard on the screen
+2023-04-05 02:40:28,843 INFO  [main] page.VirtKeyHomePage.createEnglishShiftMap(VirtKeyHomePage.java:145) Was created english Shift Map
+2023-04-05 02:40:28,843 INFO  [main] page.VirtKeyHomePage.createRussianShiftMap(VirtKeyHomePage.java:158) Was created russian Shift Map
+2023-04-05 02:40:28,843 INFO  [main] page.VirtKeyHomePage.createEnRuMap(VirtKeyHomePage.java:169) Was created EN/RU Map
+2023-04-05 02:40:28,843 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:40:28,867 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
+2023-04-05 02:40:29,985 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:40:29,993 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
+2023-04-05 02:40:30,151 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:40:30,293 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:40:30,372 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:40:30,450 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
+2023-04-05 02:40:30,492 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:40:30,681 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:40:31,020 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:40:31,142 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:40:31,265 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:40:31,375 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:40:31,421 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
+2023-04-05 02:40:31,467 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
+2023-04-05 02:40:31,590 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:40:31,716 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:40:31,834 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:40:31,834 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
+2023-04-05 02:40:31,870 INFO  [main] page.VirtKeyHomePage.writeText(VirtKeyHomePage.java:123) Was wrote text '®123;%:?*90_+…ˆÛÍÂÌ√ÿŸ«’⁄
 ‘€‚‡ œ–ŒÎ‰Ê›|ﬂ◊—ÏËÚ¡‹ﬁ,'
-2023-04-05 02:13:16,568 TRACE websocketx.WebSocket08FrameEncoder [AsyncHttpClient-1-4] io.netty.handler.codec.http.websocketx.WebSocket08FrameEncoder.encode(WebSocket08FrameEncoder.java:129) Encoding WebSocket Frame opCode=8 length=26
-2023-04-05 02:13:17,911 INFO  [main] page.VirtKeyHomePage.openPage(VirtKeyHomePage.java:29) Was opened 'Virtual Keyboard' page with URL: [https://virtual-keyboard-app.vercel.app/]
-2023-04-05 02:13:17,951 INFO  [main] page.VirtKeyHomePage.showKeyboard(VirtKeyHomePage.java:36) Was showed keyboard on the screen
-2023-04-05 02:13:17,961 INFO  [main] page.VirtKeyHomePage.createEnglishShiftMap(VirtKeyHomePage.java:145) Was created english Shift Map
-2023-04-05 02:13:17,962 INFO  [main] page.VirtKeyHomePage.createRussianShiftMap(VirtKeyHomePage.java:158) Was created russian Shift Map
-2023-04-05 02:13:17,962 INFO  [main] page.VirtKeyHomePage.createEnRuMap(VirtKeyHomePage.java:169) Was created EN/RU Map
-2023-04-05 02:13:19,215 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
-2023-04-05 02:13:19,379 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
-2023-04-05 02:13:19,479 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
-2023-04-05 02:13:19,569 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
-2023-04-05 02:13:19,614 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
-2023-04-05 02:13:19,696 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
-2023-04-05 02:13:19,807 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
-2023-04-05 02:13:19,812 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
-2023-04-05 02:13:19,887 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
-2023-04-05 02:13:19,891 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
-2023-04-05 02:13:19,968 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
-2023-04-05 02:13:19,974 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
-2023-04-05 02:13:20,124 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
-2023-04-05 02:13:20,153 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
-2023-04-05 02:13:20,195 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
-2023-04-05 02:13:20,224 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
-2023-04-05 02:13:20,228 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
-2023-04-05 02:13:20,339 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
-2023-04-05 02:13:20,419 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
-2023-04-05 02:13:20,496 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
-2023-04-05 02:13:20,537 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
-2023-04-05 02:13:20,640 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
-2023-04-05 02:13:20,683 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
-2023-04-05 02:13:20,730 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
-2023-04-05 02:13:20,845 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
-2023-04-05 02:13:20,887 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
-2023-04-05 02:13:21,000 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
-2023-04-05 02:13:21,041 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
-2023-04-05 02:13:21,195 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
-2023-04-05 02:13:21,204 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
-2023-04-05 02:13:21,239 INFO  [main] page.VirtKeyHomePage.writeText(VirtKeyHomePage.java:123) Was wrote text '`123;%:?*90_+…ˆÛrty√ÿop’⁄
+2023-04-05 02:40:31,870 TRACE websocketx.WebSocket08FrameEncoder [AsyncHttpClient-1-4] io.netty.handler.codec.http.websocketx.WebSocket08FrameEncoder.encode(WebSocket08FrameEncoder.java:129) Encoding WebSocket Frame opCode=8 length=26
+2023-04-05 02:40:33,849 INFO  [main] page.VirtKeyHomePage.openPage(VirtKeyHomePage.java:29) Was opened 'Virtual Keyboard' page with URL: [https://virtual-keyboard-app.vercel.app/]
+2023-04-05 02:40:33,889 INFO  [main] page.VirtKeyHomePage.showKeyboard(VirtKeyHomePage.java:36) Was showed keyboard on the screen
+2023-04-05 02:40:33,897 INFO  [main] page.VirtKeyHomePage.createEnglishShiftMap(VirtKeyHomePage.java:145) Was created english Shift Map
+2023-04-05 02:40:33,897 INFO  [main] page.VirtKeyHomePage.createRussianShiftMap(VirtKeyHomePage.java:158) Was created russian Shift Map
+2023-04-05 02:40:33,897 INFO  [main] page.VirtKeyHomePage.createEnRuMap(VirtKeyHomePage.java:169) Was created EN/RU Map
+2023-04-05 02:40:35,107 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:40:35,258 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:40:35,343 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:40:35,430 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
+2023-04-05 02:40:35,477 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:40:35,563 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
+2023-04-05 02:40:35,678 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:40:35,684 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
+2023-04-05 02:40:35,765 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:40:35,771 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
+2023-04-05 02:40:35,851 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:40:35,857 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
+2023-04-05 02:40:36,016 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
+2023-04-05 02:40:36,047 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
+2023-04-05 02:40:36,089 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
+2023-04-05 02:40:36,124 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:40:36,127 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
+2023-04-05 02:40:36,251 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
+2023-04-05 02:40:36,335 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:40:36,415 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
+2023-04-05 02:40:36,457 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:40:36,566 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:40:36,614 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
+2023-04-05 02:40:36,661 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
+2023-04-05 02:40:36,782 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:40:36,825 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
+2023-04-05 02:40:36,942 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
+2023-04-05 02:40:36,985 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:40:37,103 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:40:37,107 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
+2023-04-05 02:40:37,137 INFO  [main] page.VirtKeyHomePage.writeText(VirtKeyHomePage.java:123) Was wrote text '`123;%:?*90_+…ˆÛrty√ÿop’⁄
 ‘{€}‚‡ [] GHŒÎ‰Ê›|ﬂ◊—Ï///bÚ¡‹ﬁ,'
-2023-04-05 02:13:21,240 TRACE websocketx.WebSocket08FrameEncoder [AsyncHttpClient-1-7] io.netty.handler.codec.http.websocketx.WebSocket08FrameEncoder.encode(WebSocket08FrameEncoder.java:129) Encoding WebSocket Frame opCode=8 length=26
-2023-04-05 02:13:22,820 INFO  [main] page.VirtKeyHomePage.openPage(VirtKeyHomePage.java:29) Was opened 'Virtual Keyboard' page with URL: [https://virtual-keyboard-app.vercel.app/]
-2023-04-05 02:13:22,861 INFO  [main] page.VirtKeyHomePage.showKeyboard(VirtKeyHomePage.java:36) Was showed keyboard on the screen
-2023-04-05 02:13:22,872 INFO  [main] page.VirtKeyHomePage.createEnglishShiftMap(VirtKeyHomePage.java:145) Was created english Shift Map
-2023-04-05 02:13:22,872 INFO  [main] page.VirtKeyHomePage.createRussianShiftMap(VirtKeyHomePage.java:158) Was created russian Shift Map
-2023-04-05 02:13:22,872 INFO  [main] page.VirtKeyHomePage.createEnRuMap(VirtKeyHomePage.java:169) Was created EN/RU Map
-2023-04-05 02:13:22,872 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
-2023-04-05 02:13:23,983 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
-2023-04-05 02:13:26,505 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
-2023-04-05 02:13:26,535 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
-2023-04-05 02:13:27,469 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
-2023-04-05 02:13:27,579 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
-2023-04-05 02:13:28,826 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
-2023-04-05 02:13:28,854 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
-2023-04-05 02:13:30,147 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
-2023-04-05 02:13:30,176 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
-2023-04-05 02:13:31,337 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
-2023-04-05 02:13:31,367 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
-2023-04-05 02:13:32,387 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
-2023-04-05 02:13:32,417 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
-2023-04-05 02:13:34,620 INFO  [main] page.VirtKeyHomePage.writeText(VirtKeyHomePage.java:123) Was wrote text 'We are uncovering better ways of developing
+2023-04-05 02:40:37,137 TRACE websocketx.WebSocket08FrameEncoder [AsyncHttpClient-1-7] io.netty.handler.codec.http.websocketx.WebSocket08FrameEncoder.encode(WebSocket08FrameEncoder.java:129) Encoding WebSocket Frame opCode=8 length=26
+2023-04-05 02:40:38,458 INFO  [main] page.VirtKeyHomePage.openPage(VirtKeyHomePage.java:29) Was opened 'Virtual Keyboard' page with URL: [https://virtual-keyboard-app.vercel.app/]
+2023-04-05 02:40:38,506 INFO  [main] page.VirtKeyHomePage.showKeyboard(VirtKeyHomePage.java:36) Was showed keyboard on the screen
+2023-04-05 02:40:38,517 INFO  [main] page.VirtKeyHomePage.createEnglishShiftMap(VirtKeyHomePage.java:145) Was created english Shift Map
+2023-04-05 02:40:38,518 INFO  [main] page.VirtKeyHomePage.createRussianShiftMap(VirtKeyHomePage.java:158) Was created russian Shift Map
+2023-04-05 02:40:38,518 INFO  [main] page.VirtKeyHomePage.createEnRuMap(VirtKeyHomePage.java:169) Was created EN/RU Map
+2023-04-05 02:40:38,518 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:40:39,585 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:40:42,106 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:40:42,130 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:40:43,089 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:40:43,203 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:40:44,493 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:40:44,518 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:40:45,704 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:40:45,727 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:40:46,914 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:40:46,944 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:40:48,002 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:40:48,027 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:40:50,288 INFO  [main] page.VirtKeyHomePage.writeText(VirtKeyHomePage.java:123) Was wrote text 'We are uncovering better ways of developing
 software by doing it and helping others do it.
 Through this work we have come to value:
 
@@ -388,4 +386,383 @@ Responding to change over following a plan
 
 That is, while there is value in the items on
 the right, we value the items on the left more.'
-2023-04-05 02:13:34,620 TRACE websocketx.WebSocket08FrameEncoder [AsyncHttpClient-1-10] io.netty.handler.codec.http.websocketx.WebSocket08FrameEncoder.encode(WebSocket08FrameEncoder.java:129) Encoding WebSocket Frame opCode=8 length=26
+2023-04-05 02:40:50,288 TRACE websocketx.WebSocket08FrameEncoder [AsyncHttpClient-1-10] io.netty.handler.codec.http.websocketx.WebSocket08FrameEncoder.encode(WebSocket08FrameEncoder.java:129) Encoding WebSocket Frame opCode=8 length=26
+2023-04-05 02:45:31,447 DEBUG logging.InternalLoggerFactory [main] io.netty.util.internal.logging.InternalLoggerFactory.useLog4J2LoggerFactory(InternalLoggerFactory.java:76) Using Log4J2 as the default logging framework
+2023-04-05 02:45:31,452 DEBUG util.ResourceLeakDetector [main] io.netty.util.ResourceLeakDetector.<clinit>(ResourceLeakDetector.java:129) -Dio.netty.leakDetection.level: simple
+2023-04-05 02:45:31,452 DEBUG util.ResourceLeakDetector [main] io.netty.util.ResourceLeakDetector.<clinit>(ResourceLeakDetector.java:130) -Dio.netty.leakDetection.targetRecords: 4
+2023-04-05 02:45:31,454 DEBUG util.ResourceLeakDetectorFactory [main] io.netty.util.ResourceLeakDetectorFactory$DefaultResourceLeakDetectorFactory.newResourceLeakDetector(ResourceLeakDetectorFactory.java:196) Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@19f040ba
+2023-04-05 02:45:31,464 DEBUG internal.PlatformDependent0 [main] io.netty.util.internal.PlatformDependent0.explicitNoUnsafeCause0(PlatformDependent0.java:496) -Dio.netty.noUnsafe: false
+2023-04-05 02:45:31,465 DEBUG internal.PlatformDependent0 [main] io.netty.util.internal.PlatformDependent0.javaVersion0(PlatformDependent0.java:1000) Java version: 17
+2023-04-05 02:45:31,465 DEBUG internal.PlatformDependent0 [main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:137) sun.misc.Unsafe.theUnsafe: available
+2023-04-05 02:45:31,466 DEBUG internal.PlatformDependent0 [main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:161) sun.misc.Unsafe.copyMemory: available
+2023-04-05 02:45:31,466 DEBUG internal.PlatformDependent0 [main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:193) sun.misc.Unsafe.storeFence: available
+2023-04-05 02:45:31,467 DEBUG internal.PlatformDependent0 [main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:236) java.nio.Buffer.address: available
+2023-04-05 02:45:31,467 DEBUG internal.PlatformDependent0 [main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:317) direct buffer constructor: unavailable
+java.lang.UnsupportedOperationException: Reflective setAccessible(true) disabled
+	at io.netty.util.internal.ReflectionUtil.trySetAccessible(ReflectionUtil.java:31) ~[netty-common-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.util.internal.PlatformDependent0$5.run(PlatformDependent0.java:288) ~[netty-common-4.1.90.Final.jar:4.1.90.Final]
+	at java.security.AccessController.doPrivileged(AccessController.java:318) ~[?:?]
+	at io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:282) ~[netty-common-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.util.internal.PlatformDependent.isAndroid(PlatformDependent.java:333) ~[netty-common-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:88) ~[netty-common-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:114) ~[netty-common-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:251) ~[netty-common-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:224) ~[netty-common-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:203) ~[netty-common-4.1.90.Final.jar:4.1.90.Final]
+	at org.asynchttpclient.DefaultAsyncHttpClient.newNettyTimer(DefaultAsyncHttpClient.java:111) ~[async-http-client-2.12.3.jar:?]
+	at org.asynchttpclient.DefaultAsyncHttpClient.<init>(DefaultAsyncHttpClient.java:90) ~[async-http-client-2.12.3.jar:?]
+	at org.asynchttpclient.Dsl.asyncHttpClient(Dsl.java:32) ~[async-http-client-2.12.3.jar:?]
+	at org.openqa.selenium.remote.http.netty.NettyClient.createHttpClient(NettyClient.java:94) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.http.netty.NettyClient.<clinit>(NettyClient.java:47) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.http.netty.NettyClient$Factory.createClient(NettyClient.java:135) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:116) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:94) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.<init>(DriverCommandExecutor.java:88) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.chromium.ChromiumDriverCommandExecutor.<init>(ChromiumDriverCommandExecutor.java:40) ~[selenium-chromium-driver-4.8.3.jar:?]
+	at org.openqa.selenium.chrome.ChromeDriver$ChromeDriverCommandExecutor.<init>(ChromeDriver.java:111) ~[selenium-chrome-driver-4.8.3.jar:?]
+	at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:101) ~[selenium-chrome-driver-4.8.3.jar:?]
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88) ~[selenium-chrome-driver-4.8.3.jar:?]
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:84) ~[selenium-chrome-driver-4.8.3.jar:?]
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:52) ~[selenium-chrome-driver-4.8.3.jar:?]
+	at driver.DriverSingleton.getDriver(DriverSingleton.java:21) ~[test-classes/:?]
+	at test.CommonConditions.browseSetUp(CommonConditions.java:16) ~[test-classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139) ~[testng-7.6.1.jar:7.6.1]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69) ~[testng-7.6.1.jar:7.6.1]
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361) ~[testng-7.6.1.jar:7.6.1]
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296) ~[testng-7.6.1.jar:7.6.1]
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816) ~[testng-7.6.1.jar:7.6.1]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590) ~[testng-7.6.1.jar:7.6.1]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221) ~[testng-7.6.1.jar:7.6.1]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50) ~[testng-7.6.1.jar:7.6.1]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962) ~[testng-7.6.1.jar:7.6.1]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194) ~[testng-7.6.1.jar:7.6.1]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148) ~[testng-7.6.1.jar:7.6.1]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128) ~[testng-7.6.1.jar:7.6.1]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:806) ~[testng-7.6.1.jar:7.6.1]
+	at org.testng.TestRunner.run(TestRunner.java:601) ~[testng-7.6.1.jar:7.6.1]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433) ~[testng-7.6.1.jar:7.6.1]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427) ~[testng-7.6.1.jar:7.6.1]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387) ~[testng-7.6.1.jar:7.6.1]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330) ~[testng-7.6.1.jar:7.6.1]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) ~[testng-7.6.1.jar:7.6.1]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) ~[testng-7.6.1.jar:7.6.1]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256) ~[testng-7.6.1.jar:7.6.1]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176) ~[testng-7.6.1.jar:7.6.1]
+	at org.testng.TestNG.runSuites(TestNG.java:1099) ~[testng-7.6.1.jar:7.6.1]
+	at org.testng.TestNG.run(TestNG.java:1067) ~[testng-7.6.1.jar:7.6.1]
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66) ~[testng-rt.jar:?]
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109) ~[testng-rt.jar:?]
+2023-04-05 02:45:31,471 DEBUG internal.PlatformDependent0 [main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:385) java.nio.Bits.unaligned: available, true
+2023-04-05 02:45:31,472 DEBUG internal.PlatformDependent0 [main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:449) jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable
+java.lang.IllegalAccessException: class io.netty.util.internal.PlatformDependent0$7 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @54a097cc
+	at jdk.internal.reflect.Reflection.newIllegalAccessException(Reflection.java:392) ~[?:?]
+	at java.lang.reflect.AccessibleObject.checkAccess(AccessibleObject.java:674) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:560) ~[?:?]
+	at io.netty.util.internal.PlatformDependent0$7.run(PlatformDependent0.java:410) ~[netty-common-4.1.90.Final.jar:4.1.90.Final]
+	at java.security.AccessController.doPrivileged(AccessController.java:318) ~[?:?]
+	at io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:401) ~[netty-common-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.util.internal.PlatformDependent.isAndroid(PlatformDependent.java:333) ~[netty-common-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:88) ~[netty-common-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:114) ~[netty-common-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:251) ~[netty-common-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:224) ~[netty-common-4.1.90.Final.jar:4.1.90.Final]
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:203) ~[netty-common-4.1.90.Final.jar:4.1.90.Final]
+	at org.asynchttpclient.DefaultAsyncHttpClient.newNettyTimer(DefaultAsyncHttpClient.java:111) ~[async-http-client-2.12.3.jar:?]
+	at org.asynchttpclient.DefaultAsyncHttpClient.<init>(DefaultAsyncHttpClient.java:90) ~[async-http-client-2.12.3.jar:?]
+	at org.asynchttpclient.Dsl.asyncHttpClient(Dsl.java:32) ~[async-http-client-2.12.3.jar:?]
+	at org.openqa.selenium.remote.http.netty.NettyClient.createHttpClient(NettyClient.java:94) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.http.netty.NettyClient.<clinit>(NettyClient.java:47) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.http.netty.NettyClient$Factory.createClient(NettyClient.java:135) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:116) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:94) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.<init>(DriverCommandExecutor.java:88) ~[selenium-remote-driver-4.8.3.jar:?]
+	at org.openqa.selenium.chromium.ChromiumDriverCommandExecutor.<init>(ChromiumDriverCommandExecutor.java:40) ~[selenium-chromium-driver-4.8.3.jar:?]
+	at org.openqa.selenium.chrome.ChromeDriver$ChromeDriverCommandExecutor.<init>(ChromeDriver.java:111) ~[selenium-chrome-driver-4.8.3.jar:?]
+	at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:101) ~[selenium-chrome-driver-4.8.3.jar:?]
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88) ~[selenium-chrome-driver-4.8.3.jar:?]
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:84) ~[selenium-chrome-driver-4.8.3.jar:?]
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:52) ~[selenium-chrome-driver-4.8.3.jar:?]
+	at driver.DriverSingleton.getDriver(DriverSingleton.java:21) ~[test-classes/:?]
+	at test.CommonConditions.browseSetUp(CommonConditions.java:16) ~[test-classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139) ~[testng-7.6.1.jar:7.6.1]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69) ~[testng-7.6.1.jar:7.6.1]
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361) ~[testng-7.6.1.jar:7.6.1]
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296) ~[testng-7.6.1.jar:7.6.1]
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816) ~[testng-7.6.1.jar:7.6.1]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590) ~[testng-7.6.1.jar:7.6.1]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221) ~[testng-7.6.1.jar:7.6.1]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50) ~[testng-7.6.1.jar:7.6.1]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962) ~[testng-7.6.1.jar:7.6.1]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194) ~[testng-7.6.1.jar:7.6.1]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148) ~[testng-7.6.1.jar:7.6.1]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128) ~[testng-7.6.1.jar:7.6.1]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:806) ~[testng-7.6.1.jar:7.6.1]
+	at org.testng.TestRunner.run(TestRunner.java:601) ~[testng-7.6.1.jar:7.6.1]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433) ~[testng-7.6.1.jar:7.6.1]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427) ~[testng-7.6.1.jar:7.6.1]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387) ~[testng-7.6.1.jar:7.6.1]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330) ~[testng-7.6.1.jar:7.6.1]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) ~[testng-7.6.1.jar:7.6.1]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) ~[testng-7.6.1.jar:7.6.1]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256) ~[testng-7.6.1.jar:7.6.1]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176) ~[testng-7.6.1.jar:7.6.1]
+	at org.testng.TestNG.runSuites(TestNG.java:1099) ~[testng-7.6.1.jar:7.6.1]
+	at org.testng.TestNG.run(TestNG.java:1067) ~[testng-7.6.1.jar:7.6.1]
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66) ~[testng-rt.jar:?]
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109) ~[testng-rt.jar:?]
+2023-04-05 02:45:31,473 DEBUG internal.PlatformDependent0 [main] io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:482) java.nio.DirectByteBuffer.<init>(long, int): unavailable
+2023-04-05 02:45:31,474 DEBUG internal.PlatformDependent [main] io.netty.util.internal.PlatformDependent.unsafeUnavailabilityCause0(PlatformDependent.java:1159) sun.misc.Unsafe: available
+2023-04-05 02:45:31,474 DEBUG internal.PlatformDependent [main] io.netty.util.internal.PlatformDependent.estimateMaxDirectMemory(PlatformDependent.java:1270) maxDirectMemory: 4227858432 bytes (maybe)
+2023-04-05 02:45:31,474 DEBUG internal.PlatformDependent [main] io.netty.util.internal.PlatformDependent.tmpdir0(PlatformDependent.java:1289) -Dio.netty.tmpdir: C:\Users\ASUS\AppData\Local\Temp (java.io.tmpdir)
+2023-04-05 02:45:31,474 DEBUG internal.PlatformDependent [main] io.netty.util.internal.PlatformDependent.bitMode0(PlatformDependent.java:1368) -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2023-04-05 02:45:31,475 DEBUG internal.PlatformDependent [main] io.netty.util.internal.PlatformDependent.isWindows0(PlatformDependent.java:1119) Platform: Windows
+2023-04-05 02:45:31,475 DEBUG internal.PlatformDependent [main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:178) -Dio.netty.maxDirectMemory: -1 bytes
+2023-04-05 02:45:31,475 DEBUG internal.PlatformDependent [main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:185) -Dio.netty.uninitializedArrayAllocationThreshold: -1
+2023-04-05 02:45:31,476 DEBUG internal.CleanerJava9 [main] io.netty.util.internal.CleanerJava9.<clinit>(CleanerJava9.java:71) java.nio.ByteBuffer.cleaner(): available
+2023-04-05 02:45:31,476 DEBUG internal.PlatformDependent [main] io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:205) -Dio.netty.noPreferDirect: false
+2023-04-05 02:45:31,480 DEBUG internal.PlatformDependent [main] io.netty.util.internal.PlatformDependent$Mpsc.<clinit>(PlatformDependent.java:1010) org.jctools-core.MpscChunkedArrayQueue: available
+2023-04-05 02:45:31,491 DEBUG internal.InternalThreadLocalMap [main] io.netty.util.internal.InternalThreadLocalMap.<clinit>(InternalThreadLocalMap.java:100) -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+2023-04-05 02:45:31,491 DEBUG internal.InternalThreadLocalMap [main] io.netty.util.internal.InternalThreadLocalMap.<clinit>(InternalThreadLocalMap.java:101) -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+2023-04-05 02:45:31,523 DEBUG ssl.JdkSslContext [main] io.netty.handler.ssl.JdkSslContext.<clinit>(JdkSslContext.java:83) Default protocols (JDK): [TLSv1.3, TLSv1.2] 
+2023-04-05 02:45:31,524 DEBUG ssl.JdkSslContext [main] io.netty.handler.ssl.JdkSslContext.<clinit>(JdkSslContext.java:84) Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
+2023-04-05 02:45:31,532 DEBUG concurrent.GlobalEventExecutor [main] io.netty.util.concurrent.GlobalEventExecutor.<clinit>(GlobalEventExecutor.java:53) -Dio.netty.globalEventExecutor.quietPeriodSeconds: 1
+2023-04-05 02:45:31,552 DEBUG channel.MultithreadEventLoopGroup [main] io.netty.channel.MultithreadEventLoopGroup.<clinit>(MultithreadEventLoopGroup.java:44) -Dio.netty.eventLoopThreads: 24
+2023-04-05 02:45:31,557 DEBUG nio.NioEventLoop [main] io.netty.channel.nio.NioEventLoop.<clinit>(NioEventLoop.java:110) -Dio.netty.noKeySetOptimization: false
+2023-04-05 02:45:31,558 DEBUG nio.NioEventLoop [main] io.netty.channel.nio.NioEventLoop.<clinit>(NioEventLoop.java:111) -Dio.netty.selectorAutoRebuildThreshold: 512
+2023-04-05 02:45:31,564 TRACE nio.NioEventLoop [main] io.netty.channel.nio.NioEventLoop.openSelector(NioEventLoop.java:264) instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@1f38957
+2023-04-05 02:45:31,565 TRACE nio.NioEventLoop [main] io.netty.channel.nio.NioEventLoop.openSelector(NioEventLoop.java:264) instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@62e7dffa
+2023-04-05 02:45:31,566 TRACE nio.NioEventLoop [main] io.netty.channel.nio.NioEventLoop.openSelector(NioEventLoop.java:264) instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@6edcd0d8
+2023-04-05 02:45:31,567 TRACE nio.NioEventLoop [main] io.netty.channel.nio.NioEventLoop.openSelector(NioEventLoop.java:264) instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@6136998b
+2023-04-05 02:45:31,568 TRACE nio.NioEventLoop [main] io.netty.channel.nio.NioEventLoop.openSelector(NioEventLoop.java:264) instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@57ce634f
+2023-04-05 02:45:31,569 TRACE nio.NioEventLoop [main] io.netty.channel.nio.NioEventLoop.openSelector(NioEventLoop.java:264) instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@b8a7e43
+2023-04-05 02:45:31,569 TRACE nio.NioEventLoop [main] io.netty.channel.nio.NioEventLoop.openSelector(NioEventLoop.java:264) instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@35835fa
+2023-04-05 02:45:31,570 TRACE nio.NioEventLoop [main] io.netty.channel.nio.NioEventLoop.openSelector(NioEventLoop.java:264) instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@56f71edb
+2023-04-05 02:45:31,571 TRACE nio.NioEventLoop [main] io.netty.channel.nio.NioEventLoop.openSelector(NioEventLoop.java:264) instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@7207cb51
+2023-04-05 02:45:31,572 TRACE nio.NioEventLoop [main] io.netty.channel.nio.NioEventLoop.openSelector(NioEventLoop.java:264) instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@2a27cb34
+2023-04-05 02:45:31,573 TRACE nio.NioEventLoop [main] io.netty.channel.nio.NioEventLoop.openSelector(NioEventLoop.java:264) instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@6892cc6f
+2023-04-05 02:45:31,573 TRACE nio.NioEventLoop [main] io.netty.channel.nio.NioEventLoop.openSelector(NioEventLoop.java:264) instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@6fd1660
+2023-04-05 02:45:31,574 TRACE nio.NioEventLoop [main] io.netty.channel.nio.NioEventLoop.openSelector(NioEventLoop.java:264) instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@4a6c18ad
+2023-04-05 02:45:31,575 TRACE nio.NioEventLoop [main] io.netty.channel.nio.NioEventLoop.openSelector(NioEventLoop.java:264) instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@5e8604bf
+2023-04-05 02:45:31,576 TRACE nio.NioEventLoop [main] io.netty.channel.nio.NioEventLoop.openSelector(NioEventLoop.java:264) instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@20095ab4
+2023-04-05 02:45:31,576 TRACE nio.NioEventLoop [main] io.netty.channel.nio.NioEventLoop.openSelector(NioEventLoop.java:264) instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@4e2916c3
+2023-04-05 02:45:31,577 TRACE nio.NioEventLoop [main] io.netty.channel.nio.NioEventLoop.openSelector(NioEventLoop.java:264) instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@64aad6db
+2023-04-05 02:45:31,578 TRACE nio.NioEventLoop [main] io.netty.channel.nio.NioEventLoop.openSelector(NioEventLoop.java:264) instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@ae7950d
+2023-04-05 02:45:31,579 TRACE nio.NioEventLoop [main] io.netty.channel.nio.NioEventLoop.openSelector(NioEventLoop.java:264) instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@60d1b21f
+2023-04-05 02:45:31,579 TRACE nio.NioEventLoop [main] io.netty.channel.nio.NioEventLoop.openSelector(NioEventLoop.java:264) instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@66c83fc8
+2023-04-05 02:45:31,580 TRACE nio.NioEventLoop [main] io.netty.channel.nio.NioEventLoop.openSelector(NioEventLoop.java:264) instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@546621c4
+2023-04-05 02:45:31,581 TRACE nio.NioEventLoop [main] io.netty.channel.nio.NioEventLoop.openSelector(NioEventLoop.java:264) instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@621f89b8
+2023-04-05 02:45:31,582 TRACE nio.NioEventLoop [main] io.netty.channel.nio.NioEventLoop.openSelector(NioEventLoop.java:264) instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@f339eae
+2023-04-05 02:45:31,583 TRACE nio.NioEventLoop [main] io.netty.channel.nio.NioEventLoop.openSelector(NioEventLoop.java:264) instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@2822c6ff
+2023-04-05 02:45:31,595 DEBUG buffer.PooledByteBufAllocator [main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:157) -Dio.netty.allocator.numHeapArenas: 24
+2023-04-05 02:45:31,595 DEBUG buffer.PooledByteBufAllocator [main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:158) -Dio.netty.allocator.numDirectArenas: 24
+2023-04-05 02:45:31,595 DEBUG buffer.PooledByteBufAllocator [main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:160) -Dio.netty.allocator.pageSize: 8192
+2023-04-05 02:45:31,595 DEBUG buffer.PooledByteBufAllocator [main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:165) -Dio.netty.allocator.maxOrder: 9
+2023-04-05 02:45:31,596 DEBUG buffer.PooledByteBufAllocator [main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:169) -Dio.netty.allocator.chunkSize: 4194304
+2023-04-05 02:45:31,596 DEBUG buffer.PooledByteBufAllocator [main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:170) -Dio.netty.allocator.smallCacheSize: 256
+2023-04-05 02:45:31,596 DEBUG buffer.PooledByteBufAllocator [main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:171) -Dio.netty.allocator.normalCacheSize: 64
+2023-04-05 02:45:31,596 DEBUG buffer.PooledByteBufAllocator [main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:172) -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2023-04-05 02:45:31,597 DEBUG buffer.PooledByteBufAllocator [main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:173) -Dio.netty.allocator.cacheTrimInterval: 8192
+2023-04-05 02:45:31,597 DEBUG buffer.PooledByteBufAllocator [main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:174) -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+2023-04-05 02:45:31,597 DEBUG buffer.PooledByteBufAllocator [main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:175) -Dio.netty.allocator.useCacheForAllThreads: false
+2023-04-05 02:45:31,598 DEBUG buffer.PooledByteBufAllocator [main] io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:176) -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+2023-04-05 02:45:31,606 DEBUG buffer.ByteBufUtil [main] io.netty.buffer.ByteBufUtil.<clinit>(ByteBufUtil.java:88) -Dio.netty.allocator.type: pooled
+2023-04-05 02:45:31,607 DEBUG buffer.ByteBufUtil [main] io.netty.buffer.ByteBufUtil.<clinit>(ByteBufUtil.java:97) -Dio.netty.threadLocalDirectBufferSize: 0
+2023-04-05 02:45:31,607 DEBUG buffer.ByteBufUtil [main] io.netty.buffer.ByteBufUtil.<clinit>(ByteBufUtil.java:100) -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2023-04-05 02:45:31,843 DEBUG channel.DefaultChannelId [Forwarding newSession on session null to remote] io.netty.channel.DefaultChannelId.<clinit>(DefaultChannelId.java:79) -Dio.netty.processId: 21000 (auto-detected)
+2023-04-05 02:45:31,845 DEBUG util.NetUtil [Forwarding newSession on session null to remote] io.netty.util.NetUtil.<clinit>(NetUtil.java:142) -Djava.net.preferIPv4Stack: false
+2023-04-05 02:45:31,846 DEBUG util.NetUtil [Forwarding newSession on session null to remote] io.netty.util.NetUtil.<clinit>(NetUtil.java:143) -Djava.net.preferIPv6Addresses: false
+2023-04-05 02:45:31,852 DEBUG util.NetUtilInitializations [Forwarding newSession on session null to remote] io.netty.util.NetUtilInitializations.determineLoopback(NetUtilInitializations.java:145) Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+2023-04-05 02:45:31,853 DEBUG util.NetUtil [Forwarding newSession on session null to remote] io.netty.util.NetUtil$SoMaxConnAction.run(NetUtil.java:200) Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+2023-04-05 02:45:31,870 DEBUG channel.DefaultChannelId [Forwarding newSession on session null to remote] io.netty.channel.DefaultChannelId.<clinit>(DefaultChannelId.java:101) -Dio.netty.machineId: b4:8c:9d:ff:fe:c9:70:f1 (auto-detected)
+2023-04-05 02:45:31,900 DEBUG buffer.AbstractByteBuf [AsyncHttpClient-1-2] io.netty.buffer.AbstractByteBuf.<clinit>(AbstractByteBuf.java:63) -Dio.netty.buffer.checkAccessible: true
+2023-04-05 02:45:31,901 DEBUG buffer.AbstractByteBuf [AsyncHttpClient-1-2] io.netty.buffer.AbstractByteBuf.<clinit>(AbstractByteBuf.java:64) -Dio.netty.buffer.checkBounds: true
+2023-04-05 02:45:31,901 DEBUG util.ResourceLeakDetectorFactory [AsyncHttpClient-1-2] io.netty.util.ResourceLeakDetectorFactory$DefaultResourceLeakDetectorFactory.newResourceLeakDetector(ResourceLeakDetectorFactory.java:196) Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@6e292418
+2023-04-05 02:45:31,929 DEBUG util.Recycler [AsyncHttpClient-1-2] io.netty.util.Recycler.<clinit>(Recycler.java:96) -Dio.netty.recycler.maxCapacityPerThread: 4096
+2023-04-05 02:45:31,929 DEBUG util.Recycler [AsyncHttpClient-1-2] io.netty.util.Recycler.<clinit>(Recycler.java:97) -Dio.netty.recycler.ratio: 8
+2023-04-05 02:45:31,929 DEBUG util.Recycler [AsyncHttpClient-1-2] io.netty.util.Recycler.<clinit>(Recycler.java:98) -Dio.netty.recycler.chunkSize: 32
+2023-04-05 02:45:31,929 DEBUG util.Recycler [AsyncHttpClient-1-2] io.netty.util.Recycler.<clinit>(Recycler.java:99) -Dio.netty.recycler.blocking: false
+2023-04-05 02:45:31,929 DEBUG util.Recycler [AsyncHttpClient-1-2] io.netty.util.Recycler.<clinit>(Recycler.java:100) -Dio.netty.recycler.batchFastThreadLocalOnly: true
+2023-04-05 02:45:32,435 DEBUG compression.Brotli [AsyncHttpClient-1-2] io.netty.handler.codec.compression.Brotli.<clinit>(Brotli.java:38) brotli4j not in the classpath; Brotli support will be unavailable.
+2023-04-05 02:45:32,503 DEBUG internal.ThreadLocalRandom [main] io.netty.util.internal.ThreadLocalRandom.newSeed(ThreadLocalRandom.java:214) -Dio.netty.initialSeedUniquifier: 0x89c6d700a4c1b5f6
+2023-04-05 02:45:33,184 INFO  [main] page.VirtKeyHomePage.openPage(VirtKeyHomePage.java:29) Was opened 'Virtual Keyboard' page with URL: [https://virtual-keyboard-app.vercel.app/]
+2023-04-05 02:45:33,192 TRACE websocketx.WebSocket08FrameEncoder [AsyncHttpClient-1-4] io.netty.handler.codec.http.websocketx.WebSocket08FrameEncoder.encode(WebSocket08FrameEncoder.java:129) Encoding WebSocket Frame opCode=8 length=26
+2023-04-05 02:45:34,569 INFO  [main] page.VirtKeyHomePage.openPage(VirtKeyHomePage.java:29) Was opened 'Virtual Keyboard' page with URL: [https://virtual-keyboard-app.vercel.app/]
+2023-04-05 02:45:34,624 INFO  [main] page.VirtKeyHomePage.showKeyboard(VirtKeyHomePage.java:36) Was showed keyboard on the screen
+2023-04-05 02:45:34,635 TRACE websocketx.WebSocket08FrameEncoder [AsyncHttpClient-1-7] io.netty.handler.codec.http.websocketx.WebSocket08FrameEncoder.encode(WebSocket08FrameEncoder.java:129) Encoding WebSocket Frame opCode=8 length=26
+2023-04-05 02:45:35,926 INFO  [main] page.VirtKeyHomePage.openPage(VirtKeyHomePage.java:29) Was opened 'Virtual Keyboard' page with URL: [https://virtual-keyboard-app.vercel.app/]
+2023-04-05 02:45:35,976 INFO  [main] page.VirtKeyHomePage.showKeyboard(VirtKeyHomePage.java:36) Was showed keyboard on the screen
+2023-04-05 02:45:36,004 TRACE websocketx.WebSocket08FrameEncoder [AsyncHttpClient-1-10] io.netty.handler.codec.http.websocketx.WebSocket08FrameEncoder.encode(WebSocket08FrameEncoder.java:129) Encoding WebSocket Frame opCode=8 length=26
+2023-04-05 02:45:37,260 INFO  [main] page.VirtKeyHomePage.openPage(VirtKeyHomePage.java:29) Was opened 'Virtual Keyboard' page with URL: [https://virtual-keyboard-app.vercel.app/]
+2023-04-05 02:45:37,315 INFO  [main] page.VirtKeyHomePage.showKeyboard(VirtKeyHomePage.java:36) Was showed keyboard on the screen
+2023-04-05 02:45:37,330 INFO  [main] page.VirtKeyHomePage.createEnglishShiftMap(VirtKeyHomePage.java:145) Was created english Shift Map
+2023-04-05 02:45:37,330 INFO  [main] page.VirtKeyHomePage.createRussianShiftMap(VirtKeyHomePage.java:158) Was created russian Shift Map
+2023-04-05 02:45:37,331 INFO  [main] page.VirtKeyHomePage.createEnRuMap(VirtKeyHomePage.java:169) Was created EN/RU Map
+2023-04-05 02:45:38,712 INFO  [main] page.VirtKeyHomePage.writeText(VirtKeyHomePage.java:123) Was wrote text 'hello ;-=`'123\/.[]'
+2023-04-05 02:45:38,713 TRACE websocketx.WebSocket08FrameEncoder [AsyncHttpClient-1-13] io.netty.handler.codec.http.websocketx.WebSocket08FrameEncoder.encode(WebSocket08FrameEncoder.java:129) Encoding WebSocket Frame opCode=8 length=26
+2023-04-05 02:45:40,019 INFO  [main] page.VirtKeyHomePage.openPage(VirtKeyHomePage.java:29) Was opened 'Virtual Keyboard' page with URL: [https://virtual-keyboard-app.vercel.app/]
+2023-04-05 02:45:40,067 INFO  [main] page.VirtKeyHomePage.showKeyboard(VirtKeyHomePage.java:36) Was showed keyboard on the screen
+2023-04-05 02:45:40,079 INFO  [main] page.VirtKeyHomePage.createEnglishShiftMap(VirtKeyHomePage.java:145) Was created english Shift Map
+2023-04-05 02:45:40,079 INFO  [main] page.VirtKeyHomePage.createRussianShiftMap(VirtKeyHomePage.java:158) Was created russian Shift Map
+2023-04-05 02:45:40,080 INFO  [main] page.VirtKeyHomePage.createEnRuMap(VirtKeyHomePage.java:169) Was created EN/RU Map
+2023-04-05 02:45:40,080 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:45:41,734 INFO  [main] page.VirtKeyHomePage.writeText(VirtKeyHomePage.java:123) Was wrote text 'HELLO ~!@#$%^&*()_+{}|:"<>?'
+2023-04-05 02:45:41,736 TRACE websocketx.WebSocket08FrameEncoder [AsyncHttpClient-1-16] io.netty.handler.codec.http.websocketx.WebSocket08FrameEncoder.encode(WebSocket08FrameEncoder.java:129) Encoding WebSocket Frame opCode=8 length=26
+2023-04-05 02:45:43,002 INFO  [main] page.VirtKeyHomePage.openPage(VirtKeyHomePage.java:29) Was opened 'Virtual Keyboard' page with URL: [https://virtual-keyboard-app.vercel.app/]
+2023-04-05 02:45:43,047 INFO  [main] page.VirtKeyHomePage.showKeyboard(VirtKeyHomePage.java:36) Was showed keyboard on the screen
+2023-04-05 02:45:43,061 INFO  [main] page.VirtKeyHomePage.createEnglishShiftMap(VirtKeyHomePage.java:145) Was created english Shift Map
+2023-04-05 02:45:43,061 INFO  [main] page.VirtKeyHomePage.createRussianShiftMap(VirtKeyHomePage.java:158) Was created russian Shift Map
+2023-04-05 02:45:43,061 INFO  [main] page.VirtKeyHomePage.createEnRuMap(VirtKeyHomePage.java:169) Was created EN/RU Map
+2023-04-05 02:45:43,061 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:45:43,623 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:45:43,666 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:45:43,736 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:45:43,815 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:45:44,045 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:45:44,145 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:45:44,342 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:45:44,426 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:45:44,774 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:45:44,835 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:45:44,925 INFO  [main] page.VirtKeyHomePage.writeText(VirtKeyHomePage.java:123) Was wrote text 'HeLLo ~!@#$%her^&*()345_+{}|:"<[]>?'
+2023-04-05 02:45:44,927 TRACE websocketx.WebSocket08FrameEncoder [AsyncHttpClient-1-19] io.netty.handler.codec.http.websocketx.WebSocket08FrameEncoder.encode(WebSocket08FrameEncoder.java:129) Encoding WebSocket Frame opCode=8 length=26
+2023-04-05 02:45:46,239 INFO  [main] page.VirtKeyHomePage.openPage(VirtKeyHomePage.java:29) Was opened 'Virtual Keyboard' page with URL: [https://virtual-keyboard-app.vercel.app/]
+2023-04-05 02:45:46,282 INFO  [main] page.VirtKeyHomePage.showKeyboard(VirtKeyHomePage.java:36) Was showed keyboard on the screen
+2023-04-05 02:45:46,294 INFO  [main] page.VirtKeyHomePage.createEnglishShiftMap(VirtKeyHomePage.java:145) Was created english Shift Map
+2023-04-05 02:45:46,294 INFO  [main] page.VirtKeyHomePage.createRussianShiftMap(VirtKeyHomePage.java:158) Was created russian Shift Map
+2023-04-05 02:45:46,294 INFO  [main] page.VirtKeyHomePage.createEnRuMap(VirtKeyHomePage.java:169) Was created EN/RU Map
+2023-04-05 02:45:46,294 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
+2023-04-05 02:45:47,418 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
+2023-04-05 02:45:47,905 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
+2023-04-05 02:45:48,924 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
+2023-04-05 02:45:48,972 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
+2023-04-05 02:45:49,341 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
+2023-04-05 02:45:49,373 INFO  [main] page.VirtKeyHomePage.writeText(VirtKeyHomePage.java:123) Was wrote text '—ë1234567890-=–π—Ü—É–∫–µ –Ω–≥—à—â–∑—Ö—ä
+—Ñ—ã–≤–∞–ø—Ä–æ–ª–¥–∂—ç\—è—á—Å–º–∏—Ç—å–±—é.'
+2023-04-05 02:45:49,376 TRACE websocketx.WebSocket08FrameEncoder [AsyncHttpClient-1-22] io.netty.handler.codec.http.websocketx.WebSocket08FrameEncoder.encode(WebSocket08FrameEncoder.java:129) Encoding WebSocket Frame opCode=8 length=26
+2023-04-05 02:45:50,654 INFO  [main] page.VirtKeyHomePage.openPage(VirtKeyHomePage.java:29) Was opened 'Virtual Keyboard' page with URL: [https://virtual-keyboard-app.vercel.app/]
+2023-04-05 02:45:50,698 INFO  [main] page.VirtKeyHomePage.showKeyboard(VirtKeyHomePage.java:36) Was showed keyboard on the screen
+2023-04-05 02:45:50,710 INFO  [main] page.VirtKeyHomePage.createEnglishShiftMap(VirtKeyHomePage.java:145) Was created english Shift Map
+2023-04-05 02:45:50,710 INFO  [main] page.VirtKeyHomePage.createRussianShiftMap(VirtKeyHomePage.java:158) Was created russian Shift Map
+2023-04-05 02:45:50,710 INFO  [main] page.VirtKeyHomePage.createEnRuMap(VirtKeyHomePage.java:169) Was created EN/RU Map
+2023-04-05 02:45:50,710 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:45:50,722 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
+2023-04-05 02:45:51,837 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
+2023-04-05 02:45:51,912 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
+2023-04-05 02:45:51,952 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:45:51,957 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
+2023-04-05 02:45:51,997 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:45:52,296 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
+2023-04-05 02:45:53,232 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
+2023-04-05 02:45:53,273 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
+2023-04-05 02:45:53,664 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:45:53,674 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
+2023-04-05 02:45:53,708 INFO  [main] page.VirtKeyHomePage.writeText(VirtKeyHomePage.java:123) Was wrote text '–Å!"‚Ññ;%:?*()_+–ô–¶–£–ö–ï–ù–ì–®–©–ó–•–™
+–§–´–í–ê –ü–†–û–õ–î–ñ–≠|–Ø–ß–°–ú–ò–¢–ë–¨–Æ,'
+2023-04-05 02:45:53,711 TRACE websocketx.WebSocket08FrameEncoder [AsyncHttpClient-1-25] io.netty.handler.codec.http.websocketx.WebSocket08FrameEncoder.encode(WebSocket08FrameEncoder.java:129) Encoding WebSocket Frame opCode=8 length=26
+2023-04-05 02:45:54,989 INFO  [main] page.VirtKeyHomePage.openPage(VirtKeyHomePage.java:29) Was opened 'Virtual Keyboard' page with URL: [https://virtual-keyboard-app.vercel.app/]
+2023-04-05 02:45:55,033 INFO  [main] page.VirtKeyHomePage.showKeyboard(VirtKeyHomePage.java:36) Was showed keyboard on the screen
+2023-04-05 02:45:55,046 INFO  [main] page.VirtKeyHomePage.createEnglishShiftMap(VirtKeyHomePage.java:145) Was created english Shift Map
+2023-04-05 02:45:55,046 INFO  [main] page.VirtKeyHomePage.createRussianShiftMap(VirtKeyHomePage.java:158) Was created russian Shift Map
+2023-04-05 02:45:55,046 INFO  [main] page.VirtKeyHomePage.createEnRuMap(VirtKeyHomePage.java:169) Was created EN/RU Map
+2023-04-05 02:45:55,046 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:45:55,053 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
+2023-04-05 02:45:56,124 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:45:56,133 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
+2023-04-05 02:45:56,279 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:45:56,427 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:45:56,509 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:45:56,586 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
+2023-04-05 02:45:56,628 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:45:56,824 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:45:57,170 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:45:57,286 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:45:57,406 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:45:57,512 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:45:57,555 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
+2023-04-05 02:45:57,600 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
+2023-04-05 02:45:57,735 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:45:57,858 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:45:57,984 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:45:57,992 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
+2023-04-05 02:45:58,024 INFO  [main] page.VirtKeyHomePage.writeText(VirtKeyHomePage.java:123) Was wrote text '–Å123;%:?*90_+–ô—Ü—É–∫–µ–Ω–ì–®–©–ó–•–™
+–§–´–≤–∞ –ü–†–û–ª–¥–∂–≠|–Ø–ß–°–º–∏—Ç–ë–¨–Æ,'
+2023-04-05 02:45:58,026 TRACE websocketx.WebSocket08FrameEncoder [AsyncHttpClient-1-4] io.netty.handler.codec.http.websocketx.WebSocket08FrameEncoder.encode(WebSocket08FrameEncoder.java:129) Encoding WebSocket Frame opCode=8 length=26
+2023-04-05 02:45:59,951 INFO  [main] page.VirtKeyHomePage.openPage(VirtKeyHomePage.java:29) Was opened 'Virtual Keyboard' page with URL: [https://virtual-keyboard-app.vercel.app/]
+2023-04-05 02:45:59,991 INFO  [main] page.VirtKeyHomePage.showKeyboard(VirtKeyHomePage.java:36) Was showed keyboard on the screen
+2023-04-05 02:46:00,003 INFO  [main] page.VirtKeyHomePage.createEnglishShiftMap(VirtKeyHomePage.java:145) Was created english Shift Map
+2023-04-05 02:46:00,003 INFO  [main] page.VirtKeyHomePage.createRussianShiftMap(VirtKeyHomePage.java:158) Was created russian Shift Map
+2023-04-05 02:46:00,003 INFO  [main] page.VirtKeyHomePage.createEnRuMap(VirtKeyHomePage.java:169) Was created EN/RU Map
+2023-04-05 02:46:01,281 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:46:01,431 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:46:01,518 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:46:01,603 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
+2023-04-05 02:46:01,653 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:46:01,740 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
+2023-04-05 02:46:01,881 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:46:01,885 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
+2023-04-05 02:46:01,966 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:46:01,972 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
+2023-04-05 02:46:02,052 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:46:02,056 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
+2023-04-05 02:46:02,212 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
+2023-04-05 02:46:02,242 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
+2023-04-05 02:46:02,283 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
+2023-04-05 02:46:02,312 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:46:02,319 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
+2023-04-05 02:46:02,440 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
+2023-04-05 02:46:02,528 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:46:02,609 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
+2023-04-05 02:46:02,652 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:46:02,764 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:46:02,815 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
+2023-04-05 02:46:02,858 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
+2023-04-05 02:46:02,987 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:46:03,030 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
+2023-04-05 02:46:03,151 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
+2023-04-05 02:46:03,193 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:46:03,314 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:46:03,319 INFO  [main] page.VirtKeyHomePage.clickLangWIthJSExecutor(VirtKeyHomePage.java:134) Was clicked key 'Language'
+2023-04-05 02:46:03,351 INFO  [main] page.VirtKeyHomePage.writeText(VirtKeyHomePage.java:123) Was wrote text '`123;%:?*90_+–ô—Ü—É1rty–ì–®op–•–™
+–§{–´}–≤–∞ [] GH–û–ª–¥–∂–≠|–Ø–ß–°–º///b—Ç–ë–¨–Æ,'
+2023-04-05 02:46:03,352 TRACE websocketx.WebSocket08FrameEncoder [AsyncHttpClient-1-7] io.netty.handler.codec.http.websocketx.WebSocket08FrameEncoder.encode(WebSocket08FrameEncoder.java:129) Encoding WebSocket Frame opCode=8 length=26
+2023-04-05 02:46:05,508 INFO  [main] page.VirtKeyHomePage.openPage(VirtKeyHomePage.java:29) Was opened 'Virtual Keyboard' page with URL: [https://virtual-keyboard-app.vercel.app/]
+2023-04-05 02:46:05,547 INFO  [main] page.VirtKeyHomePage.showKeyboard(VirtKeyHomePage.java:36) Was showed keyboard on the screen
+2023-04-05 02:46:05,558 INFO  [main] page.VirtKeyHomePage.createEnglishShiftMap(VirtKeyHomePage.java:145) Was created english Shift Map
+2023-04-05 02:46:05,559 INFO  [main] page.VirtKeyHomePage.createRussianShiftMap(VirtKeyHomePage.java:158) Was created russian Shift Map
+2023-04-05 02:46:05,559 INFO  [main] page.VirtKeyHomePage.createEnRuMap(VirtKeyHomePage.java:169) Was created EN/RU Map
+2023-04-05 02:46:05,559 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:46:06,674 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:46:09,266 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:46:09,297 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:46:10,297 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:46:10,413 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:46:11,700 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:46:11,729 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:46:12,926 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:46:12,955 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:46:14,145 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:46:14,177 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:46:15,232 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:46:15,262 INFO  [main] page.VirtKeyHomePage.clickShiftWithJSExecutor(VirtKeyHomePage.java:128) Was clicked key 'Shift'
+2023-04-05 02:46:17,601 INFO  [main] page.VirtKeyHomePage.writeText(VirtKeyHomePage.java:123) Was wrote text 'We are uncovering better ways of developing
+software by doing it and helping others do it.
+Through this work we have come to value:
+
+Individuals and interactions over processes and tools
+Working software over comprehensive documentation
+Customer collaboration over contract negotiation
+Responding to change over following a plan
+
+That is, while there is value in the items on
+the right, we value the items on the left more.'
+2023-04-05 02:46:17,601 TRACE websocketx.WebSocket08FrameEncoder [AsyncHttpClient-1-10] io.netty.handler.codec.http.websocketx.WebSocket08FrameEncoder.encode(WebSocket08FrameEncoder.java:129) Encoding WebSocket Frame opCode=8 length=26
