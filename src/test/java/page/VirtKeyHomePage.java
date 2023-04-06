@@ -145,25 +145,25 @@ public class VirtKeyHomePage extends page.AbstractPage {
         executor.executeScript("document.getElementById('" + id + "').click();");
     }
 
-    public VirtKeyHomePage clickArrowLeft(int number) {
+    public VirtKeyHomePage clickArrowLeft(int num) {
         WebElement left = driver.findElement(By.id("keyboard__arrowleft"));
-        for (int i = 0; i < number; i++) {
+        for (int i = 0; i < num; i++) {
             left.click();
         }
         return this;
     }
 
-    public VirtKeyHomePage clickArrowRight(int number) {
+    public VirtKeyHomePage clickArrowRight(int num) {
         WebElement right = driver.findElement(By.id("keyboard__arrowright"));
-        for (int i = 0; i < number; i++) {
+        for (int i = 0; i < num; i++) {
             right.click();
         }
         return this;
     }
 
-    public VirtKeyHomePage clickBackspace(int number) {
+    public VirtKeyHomePage clickBackspace(int num) {
         WebElement back = driver.findElement(By.id("keyboard__backspace"));
-        for (int i = 0; i < number; i++) {
+        for (int i = 0; i < num; i++) {
             back.click();
         }
         return this;
