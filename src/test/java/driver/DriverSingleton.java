@@ -5,6 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 import java.util.Objects;
 
@@ -22,8 +23,13 @@ public class DriverSingleton {
             } else if (Objects.equals(System.getProperty("browser"), "edge")) {
                 WebDriverManager.edgedriver().setup();
                 driver = new EdgeDriver();
+            } else if (Objects.equals(System.getProperty("browser"), "firefox")) {
+                WebDriverManager.firefoxdriver().setup();
+                driver = new FirefoxDriver();
+            } else {
+                WebDriverManager.chromedriver().setup();
+                driver = new ChromeDriver();
             }
-            driver.manage().window().maximize();
         }
         driver.manage().window().maximize();
         return driver;

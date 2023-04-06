@@ -124,7 +124,7 @@ public class VirtKeyHomePage extends page.AbstractPage {
         if (isRussian) {
             clickLangWIthJSExecutor();
         }
-        logger.info("Was wrote text '" + str + "'");
+        logger.info("Was wrote text '" + driver.findElement(By.tagName("textarea")).getAttribute("value") + "'");
         return this;
     }
 

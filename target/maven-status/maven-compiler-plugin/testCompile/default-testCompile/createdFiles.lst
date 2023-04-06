@@ -1,10 +1,11 @@
-page\VirtKeyHomePage$1.class
 utils\TestListener.class
-waits\ExplicitCondition.class
+utils\MapCreator$1.class
 test\CommonConditions.class
+utils\MapCreator$2.class
+utils\MapCreator$3.class
+waits\ExplicitCondition.class
+utils\MapCreator.class
 driver\DriverSingleton.class
-page\VirtKeyHomePage$2.class
-page\VirtKeyHomePage$3.class
 test\VirtKeyTests.class
 page\AbstractPage.class
 page\VirtKeyHomePage.class
