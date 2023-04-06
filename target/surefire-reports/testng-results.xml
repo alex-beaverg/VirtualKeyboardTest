@@ -1,73 +1,165 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="13" passed="13" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-04-06T03:27:41 MSK" name="Tests" finished-at="2023-04-06T03:28:00 MSK" duration-ms="18691">
+  <suite started-at="2023-04-06T04:41:20 MSK" name="Tests" finished-at="2023-04-06T04:42:19 MSK" duration-ms="58824">
     <groups>
     </groups>
-    <test started-at="2023-04-06T03:27:41 MSK" name="Tests" finished-at="2023-04-06T03:28:00 MSK" duration-ms="18691">
+    <test started-at="2023-04-06T04:41:20 MSK" name="Tests" finished-at="2023-04-06T04:42:19 MSK" duration-ms="58824">
       <class name="test.VirtKeyTests">
-        <test-method is-config="true" signature="browseSetUp()[pri:0, instance:test.VirtKeyTests@188715b5]" started-at="2023-04-06T03:27:41 MSK" name="browseSetUp" finished-at="2023-04-06T03:27:45 MSK" duration-ms="3577" status="PASS">
+        <test-method is-config="true" signature="browseSetUp()[pri:0, instance:test.VirtKeyTests@f5ac9e4]" started-at="2023-04-06T04:41:20 MSK" name="browseSetUp" finished-at="2023-04-06T04:41:22 MSK" duration-ms="1680" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browseSetUp -->
-        <test-method signature="t07_writeTextWithoutShiftInRussian()[pri:0, instance:test.VirtKeyTests@188715b5]" started-at="2023-04-06T03:27:45 MSK" name="t07_writeTextWithoutShiftInRussian" description="Write text without Shift in Russian test" finished-at="2023-04-06T03:27:59 MSK" duration-ms="14142" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [ё1234567890-=йцуке нгшщзхъ
-фывапролджэ\ячсмитьбю.] but found [`1234567890-=qwert yuiop[]
-asdfghjkl;'\zxcvbnm,..]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [ё1234567890-=йцуке нгшщзхъ
-фывапролджэ\ячсмитьбю.] but found [`1234567890-=qwert yuiop[]
-asdfghjkl;'\zxcvbnm,..]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1413)
-at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-at org.testng.Assert.assertEquals(Assert.java:131)
-at org.testng.Assert.assertEquals(Assert.java:655)
-at org.testng.Assert.assertEquals(Assert.java:665)
-at test.VirtKeyTests.t07_writeTextWithoutShiftInRussian(VirtKeyTests.java:90)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="t01_openKeyboardPage()[pri:0, instance:test.VirtKeyTests@f5ac9e4]" started-at="2023-04-06T04:41:22 MSK" name="t01_openKeyboardPage" description="Open &#039;Virtual Keyboard&#039; page test" finished-at="2023-04-06T04:41:22 MSK" duration-ms="569" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- t01_openKeyboardPage -->
+        <test-method is-config="true" signature="browserExit()[pri:0, instance:test.VirtKeyTests@f5ac9e4]" started-at="2023-04-06T04:41:22 MSK" name="browserExit" finished-at="2023-04-06T04:41:22 MSK" duration-ms="64" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserExit -->
+        <test-method is-config="true" signature="browseSetUp()[pri:0, instance:test.VirtKeyTests@f5ac9e4]" started-at="2023-04-06T04:41:22 MSK" name="browseSetUp" finished-at="2023-04-06T04:41:23 MSK" duration-ms="693" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browseSetUp -->
+        <test-method signature="t02_showKeyboard()[pri:0, instance:test.VirtKeyTests@f5ac9e4]" started-at="2023-04-06T04:41:23 MSK" name="t02_showKeyboard" description="Show &#039;Virtual Keyboard&#039; on the page test" finished-at="2023-04-06T04:41:24 MSK" duration-ms="1251" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- t02_showKeyboard -->
+        <test-method is-config="true" signature="browserExit()[pri:0, instance:test.VirtKeyTests@f5ac9e4]" started-at="2023-04-06T04:41:24 MSK" name="browserExit" finished-at="2023-04-06T04:41:24 MSK" duration-ms="112" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserExit -->
+        <test-method is-config="true" signature="browseSetUp()[pri:0, instance:test.VirtKeyTests@f5ac9e4]" started-at="2023-04-06T04:41:24 MSK" name="browseSetUp" finished-at="2023-04-06T04:41:25 MSK" duration-ms="678" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browseSetUp -->
+        <test-method signature="t03_maximizeOutputTextarea()[pri:0, instance:test.VirtKeyTests@f5ac9e4]" started-at="2023-04-06T04:41:25 MSK" name="t03_maximizeOutputTextarea" description="Maximize output textarea" finished-at="2023-04-06T04:41:26 MSK" duration-ms="1066" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- t03_maximizeOutputTextarea -->
+        <test-method is-config="true" signature="browserExit()[pri:0, instance:test.VirtKeyTests@f5ac9e4]" started-at="2023-04-06T04:41:26 MSK" name="browserExit" finished-at="2023-04-06T04:41:26 MSK" duration-ms="110" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserExit -->
+        <test-method is-config="true" signature="browseSetUp()[pri:0, instance:test.VirtKeyTests@f5ac9e4]" started-at="2023-04-06T04:41:26 MSK" name="browseSetUp" finished-at="2023-04-06T04:41:27 MSK" duration-ms="674" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browseSetUp -->
+        <test-method signature="t04_writeTextWithoutShiftInEnglish()[pri:0, instance:test.VirtKeyTests@f5ac9e4]" started-at="2023-04-06T04:41:27 MSK" name="t04_writeTextWithoutShiftInEnglish" description="Write text without Shift in English test" finished-at="2023-04-06T04:41:29 MSK" duration-ms="2045" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- t04_writeTextWithoutShiftInEnglish -->
+        <test-method is-config="true" signature="browserExit()[pri:0, instance:test.VirtKeyTests@f5ac9e4]" started-at="2023-04-06T04:41:29 MSK" name="browserExit" finished-at="2023-04-06T04:41:29 MSK" duration-ms="114" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserExit -->
+        <test-method is-config="true" signature="browseSetUp()[pri:0, instance:test.VirtKeyTests@f5ac9e4]" started-at="2023-04-06T04:41:29 MSK" name="browseSetUp" finished-at="2023-04-06T04:41:30 MSK" duration-ms="661" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browseSetUp -->
+        <test-method signature="t05_writeTextWithShiftInEnglish()[pri:0, instance:test.VirtKeyTests@f5ac9e4]" started-at="2023-04-06T04:41:30 MSK" name="t05_writeTextWithShiftInEnglish" description="Write text with Shift in English test" finished-at="2023-04-06T04:41:33 MSK" duration-ms="2979" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- t05_writeTextWithShiftInEnglish -->
+        <test-method is-config="true" signature="browserExit()[pri:0, instance:test.VirtKeyTests@f5ac9e4]" started-at="2023-04-06T04:41:33 MSK" name="browserExit" finished-at="2023-04-06T04:41:33 MSK" duration-ms="115" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserExit -->
+        <test-method is-config="true" signature="browseSetUp()[pri:0, instance:test.VirtKeyTests@f5ac9e4]" started-at="2023-04-06T04:41:33 MSK" name="browseSetUp" finished-at="2023-04-06T04:41:33 MSK" duration-ms="656" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browseSetUp -->
+        <test-method signature="t06_writeTextWithAndWithoutShiftInEnglish()[pri:0, instance:test.VirtKeyTests@f5ac9e4]" started-at="2023-04-06T04:41:33 MSK" name="t06_writeTextWithAndWithoutShiftInEnglish" description="Write text with and without Shift in English test" finished-at="2023-04-06T04:41:36 MSK" duration-ms="2526" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- t06_writeTextWithAndWithoutShiftInEnglish -->
+        <test-method is-config="true" signature="browserExit()[pri:0, instance:test.VirtKeyTests@f5ac9e4]" started-at="2023-04-06T04:41:36 MSK" name="browserExit" finished-at="2023-04-06T04:41:36 MSK" duration-ms="115" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserExit -->
+        <test-method is-config="true" signature="browseSetUp()[pri:0, instance:test.VirtKeyTests@f5ac9e4]" started-at="2023-04-06T04:41:36 MSK" name="browseSetUp" finished-at="2023-04-06T04:41:37 MSK" duration-ms="660" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browseSetUp -->
+        <test-method signature="t07_writeTextWithoutShiftInRussian()[pri:0, instance:test.VirtKeyTests@f5ac9e4]" started-at="2023-04-06T04:41:37 MSK" name="t07_writeTextWithoutShiftInRussian" description="Write text without Shift in Russian test" finished-at="2023-04-06T04:41:41 MSK" duration-ms="4372" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- t07_writeTextWithoutShiftInRussian -->
-        <test-method is-config="true" signature="browserExit()[pri:0, instance:test.VirtKeyTests@188715b5]" started-at="2023-04-06T03:27:59 MSK" name="browserExit" finished-at="2023-04-06T03:28:00 MSK" duration-ms="861" status="PASS">
+        <test-method is-config="true" signature="browserExit()[pri:0, instance:test.VirtKeyTests@f5ac9e4]" started-at="2023-04-06T04:41:41 MSK" name="browserExit" finished-at="2023-04-06T04:41:41 MSK" duration-ms="120" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserExit -->
+        <test-method is-config="true" signature="browseSetUp()[pri:0, instance:test.VirtKeyTests@f5ac9e4]" started-at="2023-04-06T04:41:41 MSK" name="browseSetUp" finished-at="2023-04-06T04:41:42 MSK" duration-ms="658" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browseSetUp -->
+        <test-method signature="t08_writeTextWithShiftInRussian()[pri:0, instance:test.VirtKeyTests@f5ac9e4]" started-at="2023-04-06T04:41:42 MSK" name="t08_writeTextWithShiftInRussian" description="Write text with Shift in Russian test" finished-at="2023-04-06T04:41:46 MSK" duration-ms="4028" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- t08_writeTextWithShiftInRussian -->
+        <test-method is-config="true" signature="browserExit()[pri:0, instance:test.VirtKeyTests@f5ac9e4]" started-at="2023-04-06T04:41:46 MSK" name="browserExit" finished-at="2023-04-06T04:41:46 MSK" duration-ms="122" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserExit -->
+        <test-method is-config="true" signature="browseSetUp()[pri:0, instance:test.VirtKeyTests@f5ac9e4]" started-at="2023-04-06T04:41:46 MSK" name="browseSetUp" finished-at="2023-04-06T04:41:47 MSK" duration-ms="661" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browseSetUp -->
+        <test-method signature="t09_writeTextWithAndWithoutShiftInRussian()[pri:0, instance:test.VirtKeyTests@f5ac9e4]" started-at="2023-04-06T04:41:47 MSK" name="t09_writeTextWithAndWithoutShiftInRussian" description="Write text with and without Shift in Russian test" finished-at="2023-04-06T04:41:51 MSK" duration-ms="4169" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- t09_writeTextWithAndWithoutShiftInRussian -->
+        <test-method is-config="true" signature="browserExit()[pri:0, instance:test.VirtKeyTests@f5ac9e4]" started-at="2023-04-06T04:41:51 MSK" name="browserExit" finished-at="2023-04-06T04:41:51 MSK" duration-ms="124" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserExit -->
+        <test-method is-config="true" signature="browseSetUp()[pri:0, instance:test.VirtKeyTests@f5ac9e4]" started-at="2023-04-06T04:41:51 MSK" name="browseSetUp" finished-at="2023-04-06T04:41:52 MSK" duration-ms="660" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browseSetUp -->
+        <test-method signature="t10_writeTextWithAndWithoutShiftInRussianAndEnglish()[pri:0, instance:test.VirtKeyTests@f5ac9e4]" started-at="2023-04-06T04:41:52 MSK" name="t10_writeTextWithAndWithoutShiftInRussianAndEnglish" description="Write text with and without Shift in Russian and English test" finished-at="2023-04-06T04:41:56 MSK" duration-ms="4705" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- t10_writeTextWithAndWithoutShiftInRussianAndEnglish -->
+        <test-method is-config="true" signature="browserExit()[pri:0, instance:test.VirtKeyTests@f5ac9e4]" started-at="2023-04-06T04:41:56 MSK" name="browserExit" finished-at="2023-04-06T04:41:56 MSK" duration-ms="123" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserExit -->
+        <test-method is-config="true" signature="browseSetUp()[pri:0, instance:test.VirtKeyTests@f5ac9e4]" started-at="2023-04-06T04:41:56 MSK" name="browseSetUp" finished-at="2023-04-06T04:41:57 MSK" duration-ms="653" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browseSetUp -->
+        <test-method signature="t11_writeAgileManifesto()[pri:0, instance:test.VirtKeyTests@f5ac9e4]" started-at="2023-04-06T04:41:57 MSK" name="t11_writeAgileManifesto" description="Write agile manifesto" finished-at="2023-04-06T04:42:10 MSK" duration-ms="12786" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- t11_writeAgileManifesto -->
+        <test-method is-config="true" signature="browserExit()[pri:0, instance:test.VirtKeyTests@f5ac9e4]" started-at="2023-04-06T04:42:10 MSK" name="browserExit" finished-at="2023-04-06T04:42:10 MSK" duration-ms="122" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserExit -->
+        <test-method is-config="true" signature="browseSetUp()[pri:0, instance:test.VirtKeyTests@f5ac9e4]" started-at="2023-04-06T04:42:10 MSK" name="browseSetUp" finished-at="2023-04-06T04:42:11 MSK" duration-ms="662" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browseSetUp -->
+        <test-method signature="t12_writeTextWithArrows()[pri:0, instance:test.VirtKeyTests@f5ac9e4]" started-at="2023-04-06T04:42:11 MSK" name="t12_writeTextWithArrows" description="Write text with left and right arrows" finished-at="2023-04-06T04:42:14 MSK" duration-ms="3429" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- t12_writeTextWithArrows -->
+        <test-method is-config="true" signature="browserExit()[pri:0, instance:test.VirtKeyTests@f5ac9e4]" started-at="2023-04-06T04:42:14 MSK" name="browserExit" finished-at="2023-04-06T04:42:14 MSK" duration-ms="118" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserExit -->
+        <test-method is-config="true" signature="browseSetUp()[pri:0, instance:test.VirtKeyTests@f5ac9e4]" started-at="2023-04-06T04:42:14 MSK" name="browseSetUp" finished-at="2023-04-06T04:42:15 MSK" duration-ms="641" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browseSetUp -->
+        <test-method signature="t13_writeTextWithBackspace()[pri:0, instance:test.VirtKeyTests@f5ac9e4]" started-at="2023-04-06T04:42:15 MSK" name="t13_writeTextWithBackspace" description="Write text with backspace" finished-at="2023-04-06T04:42:19 MSK" duration-ms="3741" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- t13_writeTextWithBackspace -->
+        <test-method is-config="true" signature="browserExit()[pri:0, instance:test.VirtKeyTests@f5ac9e4]" started-at="2023-04-06T04:42:19 MSK" name="browserExit" finished-at="2023-04-06T04:42:19 MSK" duration-ms="128" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserExit -->
