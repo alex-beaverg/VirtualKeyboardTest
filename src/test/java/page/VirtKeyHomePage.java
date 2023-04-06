@@ -140,9 +140,9 @@ public class VirtKeyHomePage extends page.AbstractPage {
         executor.executeScript("document.getElementById('keyboard__EN').click();");
     }
 
-    private void clickWIthJSExecutor(String id) {
+    private void clickWIthJSExecutor(String elemId) {
         JavascriptExecutor executor = (JavascriptExecutor) driver;
-        executor.executeScript("document.getElementById('" + id + "').click();");
+        executor.executeScript("document.getElementById('" + elemId + "').click();");
     }
 
     public VirtKeyHomePage clickArrowLeft(int num) {
